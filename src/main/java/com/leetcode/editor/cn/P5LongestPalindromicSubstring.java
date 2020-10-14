@@ -20,7 +20,37 @@ public class P5LongestPalindromicSubstring {
     //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
         public String longestPalindrome(String s) {
-            return null;
+            int length = s.length();
+            if (length < 2) {
+                return s;
+            }
+            int maxLen = 1;
+            int start = 0;
+            char[] charArray = s.toCharArray();
+            // 开启两个指针分别向右边递推
+            for (int i = 0; i < length - 1; i++) {
+                for (int j = i + 1; j < length; j++) {
+                    if (j - i + 1 > maxLen && validPalindromic(charArray, i, j)) {
+                        maxLen = j - i + 1;
+                        start = i;
+                    }
+                }
+            }
+            return s.substring(start, start + maxLen);
+        }
+
+        /**
+         * 验证子串 s[left..right] 是否为回文串
+         */
+        private boolean validPalindromic(char[] charArray, int left, int right) {
+            while (left < right) {
+                if (charArray[left] != charArray[right]) {
+                    return false;
+                }
+                left++;
+                right--;
+            }
+            return true;
         }
     }
 //leetcode submit region end(Prohibit modification and deletion)
