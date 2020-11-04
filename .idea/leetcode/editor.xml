@@ -99,6 +99,22 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/leetcode/editor/cn/P18FourSum.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/src/main/java/com/leetcode/editor/cn/P18FourSum.java" />
+              <option name="questionId" value="18" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/leetcode/editor/cn/P19RemoveNthNodeFromEndOfList.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/src/main/java/com/leetcode/editor/cn/P19RemoveNthNodeFromEndOfList.java" />
+              <option name="questionId" value="19" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/main/java/com/leetcode/editor/cn/P1TwoSum.java">
           <value>
             <LeetcodeEditor>
