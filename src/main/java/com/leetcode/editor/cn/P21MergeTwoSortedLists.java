@@ -24,9 +24,38 @@ public class P21MergeTwoSortedLists {
      * ListNode(int val, ListNode next) { this.val = val; this.next = next; }
      * }
      */
-    class Solution {
+    static class Solution {
         public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
-            return null;
+            if (l1 == null) {
+                return l2;
+            }
+            if (l2 == null) {
+                return l1;
+            }
+
+            if (l1.val < l2.val) {
+                l1.next = mergeTwoLists(l1.next, l2);
+                return l1;
+            } else {
+                l2.next = mergeTwoLists(l1, l2.next);
+                return l2;
+            }
+        }
+
+        public static void main(String[] args) {
+            Solution solution = new Solution();
+            ListNode listNode = new ListNode(1);
+            listNode.next = new ListNode(2);
+
+            ListNode listNode1 = new ListNode(2);
+            listNode1.next = new ListNode(3);
+            ListNode result = solution.mergeTwoLists(listNode, listNode1);
+
+            while (result.next != null) {
+                System.out.println(result.val);
+                result = result.next;
+            }
+            System.out.println(result.val);
         }
     }
 //leetcode submit region end(Prohibit modification and deletion)
