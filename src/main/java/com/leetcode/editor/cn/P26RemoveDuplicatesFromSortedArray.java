@@ -51,14 +51,23 @@ public class P26RemoveDuplicatesFromSortedArray {
             if (nums.length == 0) {
                 return 0;
             }
+//            int p = 0;
+//            int q = 1;
+//            while (q < nums.length) {
+//                if (nums[p] != nums[q]) {
+//                    nums[p + 1] = nums[q];
+//                    p++;
+//                }
+//                q++;
+//            }
+//            return p + 1;
+
             int p = 0;
-            int q = 1;
-            while (q < nums.length) {
+            for (int q = 0; q < nums.length; q++) {
                 if (nums[p] != nums[q]) {
                     nums[p + 1] = nums[q];
                     p++;
                 }
-                q++;
             }
             return p + 1;
         }
