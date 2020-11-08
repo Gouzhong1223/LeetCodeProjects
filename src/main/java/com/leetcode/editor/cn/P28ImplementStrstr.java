@@ -28,8 +28,20 @@ public class P28ImplementStrstr {
     //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
         public int strStr(String haystack, String needle) {
-
-            return 0;
+            if ("".equals(needle) || haystack.equals(needle)) {
+                return 0;
+            }
+            if (needle.length() > haystack.length()) {
+                return -1;
+            }
+            int needleLength = needle.length();
+            for (int i = 0; i <= haystack.length() - needleLength; i++) {
+                String substring = haystack.substring(i, i + needleLength);
+                if (substring.equals(needle)) {
+                    return i;
+                }
+            }
+            return -1;
         }
     }
 //leetcode submit region end(Prohibit modification and deletion)
