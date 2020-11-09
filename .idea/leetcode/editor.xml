@@ -267,6 +267,14 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/leetcode/editor/cn/P35SearchInsertPosition.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/src/main/java/com/leetcode/editor/cn/P35SearchInsertPosition.java" />
+              <option name="questionId" value="35" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/main/java/com/leetcode/editor/cn/P3LongestSubstringWithoutRepeatingCharacters.java">
           <value>
             <LeetcodeEditor>

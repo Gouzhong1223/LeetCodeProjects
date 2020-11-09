@@ -37,9 +37,7 @@ package com.leetcode.editor.cn;
 // Related Topics 堆 排序 分治算法
 // 👍 188 👎 0
 
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.Comparator;
 
 public class P973KClosestPointsToOrigin {
