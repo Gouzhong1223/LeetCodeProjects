@@ -65,6 +65,8 @@ public class P110BalancedBinaryTree {
             if (root == null) {
                 return true;
             }
+            TreeNode left = root.left;
+            TreeNode right = root.right;
             return false;
         }
 
