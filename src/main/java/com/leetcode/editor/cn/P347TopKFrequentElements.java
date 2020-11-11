@@ -27,9 +27,9 @@ package com.leetcode.editor.cn;
 // Related Topics 堆 哈希表
 // 👍 565 👎 0
 
-import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.HashMap;
-import java.util.Map;
+import java.util.PriorityQueue;
 
 public class P347TopKFrequentElements {
     //leetcode submit region begin(Prohibit modification and deletion)
@@ -44,12 +44,28 @@ public class P347TopKFrequentElements {
                     map.put(num, 1);
                 }
             }
-            ArrayList<Map.Entry<Integer, Integer>> entries = new ArrayList<>(map.entrySet());
-            entries.sort((o1, o2) -> o2.getValue().compareTo(o1.getValue()));
+
+            PriorityQueue<Integer> queue = new PriorityQueue<>(Comparator.comparingInt(map::get));
+            for (Integer integer : map.keySet()) {
+                if (queue.size() < k) {
+                    queue.add(integer);
+                } else if (map.get(integer) > map.get(queue.peek())) {
+                    queue.remove();
+                    queue.add(integer);
+                }
+            }
             int[] res = new int[k];
             for (int i = 0; i < k; i++) {
-                res[i] = entries.get(i).getKey();
+                res[i] = queue.poll();
             }
+
+//            ArrayList<Map.Entry<Integer, Integer>> entries = new ArrayList<>(map.entrySet());
+//            entries.sort((o1, o2) -> o2.getValue().compareTo(o1.getValue()));
+//
+//            for (int i = 0; i < k; i++) {
+//                res[i] = entries.get(i).getKey();
+//            }
+
             return res;
         }
     }
