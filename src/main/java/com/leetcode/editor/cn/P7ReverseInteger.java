@@ -34,6 +34,12 @@ public class P7ReverseInteger {
                 n = n * 10 + x % 10;
                 x = x / 10;
             }
+            try {
+                System.out.println("HelloWorld");
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+
             return (int) n == n ? (int) n : 0;
         }
     }
