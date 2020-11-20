@@ -44,29 +44,41 @@ public class P147InsertionSortList {
      */
     // 输入: -1->5->3->4->0
     // 输出: -1->0->3->4->5
-    class Solution {
+    /*static*/ class Solution {
         public ListNode insertionSortList(ListNode head) {
             if (head == null) {
                 return head;
             }
-            ListNode dummyHead = new ListNode(0);
-            dummyHead.next = head;
-            ListNode lastSorted = head, curr = head.next;
-            while (curr != null) {
-                if (lastSorted.val <= curr.val) {
-                    lastSorted = lastSorted.next;
+            ListNode dummyNode = new ListNode(0);
+            dummyNode.next = head;
+
+            // 尚未排序的节点
+            ListNode current = head.next;
+            // 排序后链表的尾节点
+            ListNode tail = dummyNode.next;
+            while (current != null) {
+                // 先保存下一个等待排序的节点
+                ListNode nextCurrent = current.next;
+                // 如果比尾结点要大,就直接加在尾结点后面
+                if (tail.val < current.val) {
+                    tail = tail.next;
                 } else {
-                    ListNode prev = dummyHead;
-                    while (prev.next.val <= curr.val) {
-                        prev = prev.next;
+                    ListNode temp = dummyNode.next;
+                    ListNode prev = dummyNode;
+                    while (temp != null) {
+                        if (current.val < temp.val) {
+                            tail.next = current.next;
+                            prev.next = current;
+                            current.next = temp;
+                            break;
+                        }
+                        prev = temp;
+                        temp = temp.next;
                     }
-                    lastSorted.next = curr.next;
-                    curr.next = prev.next;
-                    prev.next = curr;
                 }
-                curr = lastSorted.next;
+                current = nextCurrent;
             }
-            return dummyHead.next;
+            return dummyNode.next;
         }
 
 
