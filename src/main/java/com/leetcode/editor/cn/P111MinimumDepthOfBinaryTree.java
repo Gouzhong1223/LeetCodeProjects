@@ -32,6 +32,7 @@ package com.leetcode.editor.cn;
 // Related Topics 树 深度优先搜索 广度优先搜索
 // 👍 406 👎 0
 
+import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.Queue;
 
@@ -86,6 +87,8 @@ public class P111MinimumDepthOfBinaryTree {
                 }
                 depth++;
             }
+            HashMap<Integer, Integer> integerIntegerHashMap = new HashMap<>();
+            integerIntegerHashMap.put(1, 1);
             return depth;
         }
     }
