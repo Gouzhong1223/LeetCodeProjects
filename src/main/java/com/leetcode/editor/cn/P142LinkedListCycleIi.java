@@ -56,8 +56,6 @@ package com.leetcode.editor.cn;
 // Related Topics 链表 双指针
 // 👍 750 👎 0
 
-import java.util.HashSet;
-
 public class P142LinkedListCycleIi {
     //leetcode submit region begin(Prohibit modification and deletion)
 
@@ -77,16 +75,22 @@ public class P142LinkedListCycleIi {
             if (head == null) {
                 return null;
             }
-            HashSet<ListNode> nodes = new HashSet<>();
-            while (head.next != null) {
-                if (nodes.contains(head)) {
-                    return head;
-                } else {
-                    nodes.add(head);
-                    head = head.next;
+            ListNode fast = head, slow = head;
+
+            do {
+                if (fast == null || fast.next == null) {
+                    return null;
                 }
+                fast = fast.next.next;
+                slow = slow.next;
+            } while (fast != slow);
+
+            fast = head;
+            while (slow != fast) {
+                fast = fast.next;
+                slow = slow.next;
             }
-            return null;
+            return fast;
         }
     }
 //leetcode submit region end(Prohibit modification and deletion)
