@@ -25,6 +25,13 @@ public class P46Permutations {
 
         List<List<Integer>> res = new LinkedList<>();
 
+        public static void main(String[] args) {
+            Solution solution = new Solution();
+            int[] ints = {1, 2, 3};
+            List<List<Integer>> permute = solution.permute(ints);
+            permute.forEach(System.out::println);
+        }
+
         public List<List<Integer>> permute(int[] nums) {
             // 构造装载已经做出的选择的容器
             LinkedList<Integer> track = new LinkedList<>();
@@ -50,13 +57,6 @@ public class P46Permutations {
                 track.removeLast();
             }
 
-        }
-
-        public static void main(String[] args) {
-            Solution solution = new Solution();
-            int[] ints = {1, 2, 3};
-            List<List<Integer>> permute = solution.permute(ints);
-            permute.forEach(System.out::println);
         }
     }
 //leetcode submit region end(Prohibit modification and deletion)

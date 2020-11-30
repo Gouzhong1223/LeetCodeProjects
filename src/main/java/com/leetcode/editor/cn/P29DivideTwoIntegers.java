@@ -34,48 +34,16 @@ package com.leetcode.editor.cn;
 public class P29DivideTwoIntegers {
     //leetcode submit region begin(Prohibit modification and deletion)
     static class Solution {
-        public int divide(int dividend, int divisor) {
-            int res = 0;
-            if (dividend == 0) {
-                return res;
-            }
-            if ((dividend > 0 && divisor > 0)) {
-                // 7/3
-                while (dividend >= divisor) {
-                    dividend -= divisor;
-                    res++;
-                }
-                return res;
-            } else if (dividend > 0 && divisor < 0) {
-                // 7/-3
-                while (-dividend <= divisor) {
-                    dividend += divisor;
-                    res++;
-                }
-                return -res;
-
-            } else if (dividend < 0 && divisor > 0) {
-                // -7/3
-                while (-dividend >= divisor) {
-                    dividend += divisor;
-                    res++;
-                }
-                return -res;
-            } else if (dividend < 0 && divisor < 0) {
-                // -7/-3
-                while (dividend <= divisor) {
-                    dividend -= divisor;
-                    res++;
-                }
-                return res;
-            }
-            return res;
-        }
-
         public static void main(String[] args) {
             Solution solution = new Solution();
             int divide = solution.divide(-2147483648, -1);
             System.out.println(divide);
+        }
+
+        public int divide(int dividend, int divisor) {
+            int res = 0;
+
+            return res;
         }
     }
 //leetcode submit region end(Prohibit modification and deletion)

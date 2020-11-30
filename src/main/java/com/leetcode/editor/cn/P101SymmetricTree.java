@@ -31,8 +31,6 @@ package com.leetcode.editor.cn;
 // Related Topics 树 深度优先搜索 广度优先搜索
 // 👍 1110 👎 0
 
-import sun.applet.Main;
-
 public class P101SymmetricTree {
     //leetcode submit region begin(Prohibit modification and deletion)
 
@@ -68,6 +66,7 @@ public class P101SymmetricTree {
                     isMirrer(left.left, right.right) &&
                     isMirrer(left.right, right.left);
         }
+
 
     }
 //leetcode submit region end(Prohibit modification and deletion)

@@ -36,7 +36,12 @@ import java.util.HashMap;
 
 public class P76MinimumWindowSubstring {
     //leetcode submit region begin(Prohibit modification and deletion)
-    class Solution {
+    static class Solution {
+        public static void main(String[] args) {
+            Solution solution = new Solution();
+            System.out.println(solution.minWindow("ADOBECODEB", "ABC"));
+        }
+
         public String minWindow(String s, String t) {
             if (s.equals(t)) {
                 return s;
@@ -77,11 +82,6 @@ public class P76MinimumWindowSubstring {
             }
             return len == Integer.MAX_VALUE ? "" : s.substring(start, start + len);
         }
-//
-//        public static void main(String[] args) {
-//            Solution solution = new Solution();
-//            System.out.println(solution.minWindow("ADOBECODEB", "ABC"));
-//        }
     }
 //leetcode submit region end(Prohibit modification and deletion)
 

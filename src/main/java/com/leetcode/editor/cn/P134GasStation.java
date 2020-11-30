@@ -51,6 +51,13 @@ package com.leetcode.editor.cn;
 public class P134GasStation {
     //leetcode submit region begin(Prohibit modification and deletion)
     static class Solution {
+        public static void main(String[] args) {
+            Solution solution = new Solution();
+            int[] gas = {1, 2, 3, 4, 5};
+            int[] cost = {3, 4, 5, 1, 2};
+            System.out.println(solution.canCompleteCircuit(gas, cost));
+        }
+
         public int canCompleteCircuit(int[] gas, int[] cost) {
             int length = gas.length;
             int spare = 0;
@@ -64,13 +71,6 @@ public class P134GasStation {
                 }
             }
             return spare < 0 ? -1 : (minIndex + 1) % length;
-        }
-
-        public static void main(String[] args) {
-            Solution solution = new Solution();
-            int[] gas = {1, 2, 3, 4, 5};
-            int[] cost = {3, 4, 5, 1, 2};
-            System.out.println(solution.canCompleteCircuit(gas, cost));
         }
     }
 //leetcode submit region end(Prohibit modification and deletion)

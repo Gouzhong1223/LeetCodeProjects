@@ -23,16 +23,6 @@ public class P206ReverseLinkedList {
      * }
      */
     static class Solution {
-        public ListNode reverseList(ListNode head) {
-            if (head == null || head.next == null) {
-                return head;
-            }
-            ListNode lastNode = reverseList(head.next);
-            head.next.next = head;
-            head.next = null;
-            return lastNode;
-        }
-
         public static void main(String[] args) {
             Solution solution = new Solution();
             ListNode listNode = new ListNode(1);
@@ -43,6 +33,16 @@ public class P206ReverseLinkedList {
             listNode1.next = listNode2;
             listNode2.next = listNode3;
             solution.reverseList(listNode);
+        }
+
+        public ListNode reverseList(ListNode head) {
+            if (head == null || head.next == null) {
+                return head;
+            }
+            ListNode lastNode = reverseList(head.next);
+            head.next.next = head;
+            head.next = null;
+            return lastNode;
         }
     }
 //leetcode submit region end(Prohibit modification and deletion)

@@ -27,6 +27,12 @@ package com.leetcode.editor.cn;
 public class P121BestTimeToBuyAndSellStock {
     //leetcode submit region begin(Prohibit modification and deletion)
     static class Solution {
+        public static void main(String[] args) {
+            Solution solution = new Solution();
+            int[] prises = {7, 1, 5, 3, 6, 4};
+            System.out.println(solution.maxProfit(prises));
+        }
+
         public int maxProfit(int[] prices) {
 
             if (prices.length == 0) {
@@ -56,12 +62,6 @@ public class P121BestTimeToBuyAndSellStock {
             }
 
             return dp[n - 1][0];
-        }
-
-        public static void main(String[] args) {
-            Solution solution = new Solution();
-            int[] prises = {7, 1, 5, 3, 6, 4};
-            System.out.println(solution.maxProfit(prises));
         }
     }
 //leetcode submit region end(Prohibit modification and deletion)

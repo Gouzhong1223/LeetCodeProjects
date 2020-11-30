@@ -57,39 +57,40 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Stack;
 
-public class P144BinaryTreePreorderTraversal{
+public class P144BinaryTreePreorderTraversal {
     //leetcode submit region begin(Prohibit modification and deletion)
-/**
- * Definition for a binary tree node.
- * public class TreeNode {
- *     int val;
- *     TreeNode left;
- *     TreeNode right;
- *     TreeNode() {}
- *     TreeNode(int val) { this.val = val; }
- *     TreeNode(int val, TreeNode left, TreeNode right) {
- *         this.val = val;
- *         this.left = left;
- *         this.right = right;
- *     }
- * }
- */
-class Solution {
-    public List<Integer> preorderTraversal(TreeNode root) {
-        List<Integer> res = new ArrayList<>();
-        Stack<TreeNode> nodes = new Stack<>();
-        nodes.push(root);
-        while (!nodes.isEmpty()) {
-            TreeNode pop = nodes.pop();
-            if (pop != null) {
-                res.add(pop.val);
-                nodes.push(pop.right);
-                nodes.push(pop.left);
+
+    /**
+     * Definition for a binary tree node.
+     * public class TreeNode {
+     * int val;
+     * TreeNode left;
+     * TreeNode right;
+     * TreeNode() {}
+     * TreeNode(int val) { this.val = val; }
+     * TreeNode(int val, TreeNode left, TreeNode right) {
+     * this.val = val;
+     * this.left = left;
+     * this.right = right;
+     * }
+     * }
+     */
+    class Solution {
+        public List<Integer> preorderTraversal(TreeNode root) {
+            List<Integer> res = new ArrayList<>();
+            Stack<TreeNode> nodes = new Stack<>();
+            nodes.push(root);
+            while (!nodes.isEmpty()) {
+                TreeNode pop = nodes.pop();
+                if (pop != null) {
+                    res.add(pop.val);
+                    nodes.push(pop.right);
+                    nodes.push(pop.left);
+                }
             }
+            return res;
         }
-        return res;
     }
-}
 //leetcode submit region end(Prohibit modification and deletion)
 
 }

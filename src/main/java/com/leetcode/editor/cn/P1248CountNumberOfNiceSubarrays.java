@@ -44,7 +44,7 @@ public class P1248CountNumberOfNiceSubarrays {
     class Solution {
         public int numberOfSubarrays(int[] nums, int k) {
             int left = 0, right = 0, oddCnt = 0, res = 0;
-            
+
             while (right < nums.length) {
                 if ((nums[right++] & 1) == 1) {
                     oddCnt++;

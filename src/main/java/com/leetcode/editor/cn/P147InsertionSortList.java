@@ -45,6 +45,39 @@ public class P147InsertionSortList {
     // 输入: -1->5->3->4->0
     // 输出: -1->0->3->4->5
     static class Solution {
+        public static void main(String[] args) {
+            Solution solution = new Solution();
+            ListNode listNode = new ListNode(-1);
+            ListNode listNode1 = new ListNode(5);
+            ListNode listNode2 = new ListNode(3);
+            ListNode listNode3 = new ListNode(4);
+            ListNode listNode4 = new ListNode(0);
+            ListNode listNode5 = new ListNode(2);
+            ListNode listNode6 = new ListNode(6);
+            listNode.next = listNode1;
+            listNode1.next = listNode2;
+            listNode2.next = listNode3;
+            listNode3.next = listNode4;
+            listNode4.next = listNode5;
+            listNode5.next = listNode6;
+
+            ListNode list = solution.insertionSortList(listNode);
+
+//            while (list.next != null) {
+//                System.out.println("list.val = " + list.val);
+//                list = list.next;
+//            }
+//            System.out.println("list.val = " + list.val);
+            for (ListNode p = list; p != null; p = p.next) {
+                System.out.println(p.val);
+            }
+            while (list != null) {
+                System.out.println("list.val = " + list.val);
+                list = list.next;
+            }
+
+        }
+
         public ListNode insertionSortList(ListNode head) {
             if (head == null) {
                 return head;
@@ -79,40 +112,6 @@ public class P147InsertionSortList {
                 current = nextCurrent;
             }
             return dummyNode.next;
-        }
-
-
-        public static void main(String[] args) {
-            Solution solution = new Solution();
-            ListNode listNode = new ListNode(-1);
-            ListNode listNode1 = new ListNode(5);
-            ListNode listNode2 = new ListNode(3);
-            ListNode listNode3 = new ListNode(4);
-            ListNode listNode4 = new ListNode(0);
-            ListNode listNode5 = new ListNode(2);
-            ListNode listNode6 = new ListNode(6);
-            listNode.next = listNode1;
-            listNode1.next = listNode2;
-            listNode2.next = listNode3;
-            listNode3.next = listNode4;
-            listNode4.next = listNode5;
-            listNode5.next = listNode6;
-
-            ListNode list = solution.insertionSortList(listNode);
-
-//            while (list.next != null) {
-//                System.out.println("list.val = " + list.val);
-//                list = list.next;
-//            }
-//            System.out.println("list.val = " + list.val);
-            for (ListNode p = list; p != null; p = p.next) {
-                System.out.println(p.val);
-            }
-            while (list != null) {
-                System.out.println("list.val = " + list.val);
-                list = list.next;
-            }
-
         }
     }
 //leetcode submit region end(Prohibit modification and deletion)

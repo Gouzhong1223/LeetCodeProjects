@@ -57,10 +57,7 @@ public class P213HouseRobberIi {
             for (int i = end - 1; i >= start; i--) {
                 dp[i] = Math.max(dp[i + 1], nums[i] + dp[i + 2]);
             }
-            if (start == 0) {
-                return dp[0];
-            }
-            return dp[1];
+            return dp[start];
         }
 
 //        public static void main(String[] args) {

@@ -58,6 +58,14 @@ import java.util.Comparator;
 public class P4MedianOfTwoSortedArrays {
     //leetcode submit region begin(Prohibit modification and deletion)
     static class Solution {
+        public static void main(String[] args) {
+            Solution solution = new Solution();
+            int[] int1 = {1, 2};
+            int[] int2 = {3, 4};
+            double medianSortedArrays = solution.findMedianSortedArrays(int1, int2);
+            System.out.println(medianSortedArrays);
+        }
+
         public double findMedianSortedArrays(int[] nums1, int[] nums2) {
             ArrayList<Integer> integers = new ArrayList<>();
 
@@ -78,14 +86,6 @@ public class P4MedianOfTwoSortedArrays {
                 res = integers.get((size - 1) / 2);
             }
             return res;
-        }
-
-        public static void main(String[] args) {
-            Solution solution = new Solution();
-            int[] int1 = {1, 2};
-            int[] int2 = {3, 4};
-            double medianSortedArrays = solution.findMedianSortedArrays(int1, int2);
-            System.out.println(medianSortedArrays);
         }
     }
 //leetcode submit region end(Prohibit modification and deletion)

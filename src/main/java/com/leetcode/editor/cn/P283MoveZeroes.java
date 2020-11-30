@@ -18,6 +18,13 @@ package com.leetcode.editor.cn;
 public class P283MoveZeroes {
     //leetcode submit region begin(Prohibit modification and deletion)
     static class Solution {
+        public static void main(String[] args) {
+            Solution solution = new Solution();
+            int[] ints = {0, 1, 0, 3, 12};
+            solution.moveZeroes(ints);
+
+        }
+
         public void moveZeroes(int[] nums) {
             int j = 0;
             for (int i = 0; i < nums.length; i++) {
@@ -28,13 +35,6 @@ public class P283MoveZeroes {
             for (int i = j; i < nums.length; ++i) {
                 nums[i] = 0;
             }
-        }
-
-        public static void main(String[] args) {
-            Solution solution = new Solution();
-            int[] ints = {0, 1, 0, 3, 12};
-            solution.moveZeroes(ints);
-
         }
     }
     //leetcode submit region end(Prohibit modification and deletion)

@@ -36,6 +36,11 @@ import java.util.HashMap;
 public class P567PermutationInString {
     //leetcode submit region begin(Prohibit modification and deletion)
     static class Solution {
+        public static void main(String[] args) {
+            Solution solution = new Solution();
+            System.out.println(solution.checkInclusion("ab", "dboaoo"));
+        }
+
         public boolean checkInclusion(String s1, String s2) {
             HashMap<Character, Integer> need = new HashMap<>();
             HashMap<Character, Integer> window = new HashMap<>();
@@ -68,11 +73,6 @@ public class P567PermutationInString {
                 }
             }
             return false;
-        }
-
-        public static void main(String[] args) {
-            Solution solution = new Solution();
-            System.out.println(solution.checkInclusion("ab", "dboaoo"));
         }
     }
 //leetcode submit region end(Prohibit modification and deletion)

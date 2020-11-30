@@ -67,6 +67,11 @@ package com.leetcode.editor.cn;
 public class P1370IncreasingDecreasingString {
     //leetcode submit region begin(Prohibit modification and deletion)
     static class Solution {
+        public static void main(String[] args) {
+            Solution solution = new Solution();
+            System.out.println(solution.sortString("aaaabbbbcccc"));
+        }
+
         public String sortString(String s) {
             int[] num = new int[26];
             for (int i = 0; i < s.length(); i++) {
@@ -88,11 +93,6 @@ public class P1370IncreasingDecreasingString {
                 }
             }
             return ret.toString();
-        }
-
-        public static void main(String[] args) {
-            Solution solution = new Solution();
-            System.out.println(solution.sortString("aaaabbbbcccc"));
         }
     }
 //leetcode submit region end(Prohibit modification and deletion)

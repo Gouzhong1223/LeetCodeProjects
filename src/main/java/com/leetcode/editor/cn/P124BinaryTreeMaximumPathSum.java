@@ -30,8 +30,6 @@ package com.leetcode.editor.cn;
 // Related Topics 树 深度优先搜索
 // 👍 781 👎 0
 
-import java.util.Arrays;
-
 public class P124BinaryTreeMaximumPathSum {
     //leetcode submit region begin(Prohibit modification and deletion)
 

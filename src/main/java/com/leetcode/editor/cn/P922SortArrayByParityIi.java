@@ -31,6 +31,14 @@ package com.leetcode.editor.cn;
 public class P922SortArrayByParityIi {
     //leetcode submit region begin(Prohibit modification and deletion)
     static class Solution {
+        public static void main(String[] args) {
+            Solution solution = new Solution();
+            int[] ints = solution.sortArrayByParityII(new int[]{4, 2, 5, 6, 7, 8});
+            for (int anInt : ints) {
+                System.out.println(anInt);
+            }
+        }
+
         public int[] sortArrayByParityII(int[] A) {
             // 双指针,原地修改
             int j = 1;
@@ -44,14 +52,6 @@ public class P922SortArrayByParityIi {
             }
             return A;
 
-        }
-
-        public static void main(String[] args) {
-            Solution solution = new Solution();
-            int[] ints = solution.sortArrayByParityII(new int[]{4, 2, 5, 6, 7, 8});
-            for (int anInt : ints) {
-                System.out.println(anInt);
-            }
         }
 
         /**

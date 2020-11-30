@@ -54,13 +54,13 @@ package com.leetcode.editor.cn;
 // Related Topics 数学 字符串
 // 👍 437 👎 0
 
-public class P12IntegerToRoman{
+public class P12IntegerToRoman {
     //leetcode submit region begin(Prohibit modification and deletion)
-class Solution {
-    public String intToRoman(int num) {
-        return "";
+    class Solution {
+        public String intToRoman(int num) {
+            return "";
+        }
     }
-}
 //leetcode submit region end(Prohibit modification and deletion)
 
 }

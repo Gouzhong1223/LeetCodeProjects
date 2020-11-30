@@ -66,13 +66,13 @@ package com.leetcode.editor.cn;
 // Related Topics 数学 字符串
 // 👍 1103 👎 0
 
-public class P13RomanToInteger{
+public class P13RomanToInteger {
     //leetcode submit region begin(Prohibit modification and deletion)
-class Solution {
-    public int romanToInt(String s) {
-        return 0;
+    class Solution {
+        public int romanToInt(String s) {
+            return 0;
+        }
     }
-}
 //leetcode submit region end(Prohibit modification and deletion)
 
 }

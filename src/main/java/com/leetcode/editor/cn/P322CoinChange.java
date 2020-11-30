@@ -54,7 +54,7 @@ package com.leetcode.editor.cn;
 
 public class P322CoinChange {
     //leetcode submit region begin(Prohibit modification and deletion)
-     class Solution {
+    class Solution {
         public int coinChange(int[] coins, int amount) {
             if (amount < 1) {
                 return 0;
