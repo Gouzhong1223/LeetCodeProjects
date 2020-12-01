@@ -31,24 +31,8 @@ public class P92ReverseLinkedListIi {
 
         public static void main(String[] args) {
             int[] ints = {2, 5, 6, 8, 1, 4, 7, 6};
-//            CopyOnWriteArrayList<Integer> integers = new CopyOnWriteArrayList<>();
-//            integers.add(1);
-//            Solution solution = new Solution();
-//            solution.sort(ints);
-//            for (int re : ints) {
-//                System.out.println(re);
-//            }
 
             Solution solution = new Solution();
-//            String s = "qqqqqqqqqqqqqaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaadasda" +
-//                    "sdqqqqqdsadlkashjdasddgjdiyduiysuha" +
-//                    "sgdfyuUIDFADHUASoyhduashdhashdgasdqqqqqqqqqqqwwwwwwwwww" +
-//                    "dasjkdhjkshdhasjkdkasgdashgdhjkagdwwwwwwwweeeeeeeeee" +
-//                    "eeeeeerrrrrrrrrrrrrrrrrrttttttttttttyyyyuuuuuxxxxxxx";
-//            List<Character> contour = solution.contour(s, 5);
-//            for (Character character : contour) {
-//                System.out.println(character);
-//            }
             solution.bubbleSort(ints);
             for (int anInt : ints) {
                 System.out.println(anInt);
