@@ -27,9 +27,10 @@ public class P2AddTwoNumbers {
      * ListNode(int val, ListNode next) { this.val = val; this.next = next; }
      * }
      */
-    class Solution {
+    static class Solution {
 
         public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
+
             ListNode pre = new ListNode(0);
             ListNode cur = pre;
 
@@ -37,12 +38,14 @@ public class P2AddTwoNumbers {
 
             while (l1 != null || l2 != null) {
 
+                // 补位
                 int x = l1 == null ? 0 : l1.val;
                 int y = l2 == null ? 0 : l2.val;
                 int sum = x + y + carry;
-
+                // 进位
                 carry = sum / 10;
                 sum = sum % 10;
+
                 cur.next = new ListNode(sum);
 
                 cur = cur.next;
@@ -58,6 +61,29 @@ public class P2AddTwoNumbers {
             }
 
             return pre.next;
+        }
+
+        // 输入：(2 -> 4 -> 3) + (5 -> 6 -> 4)
+        // 输出：7 -> 0 -> 8
+        public static void main(String[] args) {
+            ListNode listNode = new ListNode(2);
+            ListNode listNode1 = new ListNode(4);
+            ListNode listNode2 = new ListNode(3);
+            ListNode listNode3 = new ListNode(5);
+            ListNode listNode4 = new ListNode(6);
+            ListNode listNode5 = new ListNode(4);
+            listNode.next = listNode1;
+            listNode1.next = listNode2;
+            listNode3.next = listNode4;
+            listNode4.next = listNode5;
+            Solution solution = new Solution();
+
+            ListNode listNode6 = solution.addTwoNumbers(listNode, listNode3);
+
+            for (ListNode lNode = listNode6; lNode != null; lNode = lNode.next) {
+                System.out.println(lNode.val);
+            }
+
         }
     }
 //leetcode submit region end(Prohibit modification and deletion)
