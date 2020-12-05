@@ -63,24 +63,43 @@ public class P3LongestSubstringWithoutRepeatingCharacters {
 //                map.put(s.charAt(i), i);
 //                max = Math.max(max, i - left + 1);
 //            }
-            int res = 0;
-            HashMap<Character, Integer> window = new HashMap<>();
-            int left = 0, right = 0;
-            while (right < s.length()) {
-                char c = s.charAt(right);
-                right++;
-                window.put(c, window.getOrDefault(c, 0) + 1);
-                while (window.get(c) > 1) {
-                    char d = s.charAt(left);
-                    left++;
-                    if (window.containsKey(d)) {
-                        window.put(d, window.getOrDefault(d, 0) - 1);
-                    }
+
+            HashMap<Character, Integer> hashMap = new HashMap<>();
+            int left = 0;
+            int max = 0;
+            for (int i = 0; i < s.length(); i++) {
+                if (hashMap.containsKey(s.charAt(i))) {
+                    left = Math.max(left, hashMap.get(s.charAt(i)) + 1);
                 }
-                res = Math.max(res, right - left);
+                hashMap.put(s.charAt(i), i);
+                max = Math.max(max, i - left + 1);
             }
-            return res;
+            return max;
+
+//            int res = 0;
+//            HashMap<Character, Integer> window = new HashMap<>();
+//            int left = 0, right = 0;
+//            while (right < s.length()) {
+//                char c = s.charAt(right);
+//                right++;
+//                window.put(c, window.getOrDefault(c, 0) + 1);
+//                while (window.get(c) > 1) {
+//                    char d = s.charAt(left);
+//                    left++;
+//                    if (window.containsKey(d)) {
+//                        window.put(d, window.getOrDefault(d, 0) - 1);
+//                    }
+//                }
+//                res = Math.max(res, right - left);
+//            }
+//            return res;
         }
+
+//        public static void main(String[] args) {
+//            Solution solution = new Solution();
+//            int sssba = solution.lengthOfLongestSubstring("sssba");
+//            System.out.println(sssba);
+//        }
 
     }
 //leetcode submit region end(Prohibit modification and deletion)
