@@ -15,12 +15,31 @@ package com.leetcode.editor.cn;
 // Related Topics 数组 哈希表
 // 👍 9311 👎 0
 
+import java.util.HashMap;
+
 public class P1TwoSum {
     //leetcode submit region begin(Prohibit modification and deletion)
-    class Solution {
+    static class Solution {
         public int[] twoSum(int[] nums, int target) {
 
+            HashMap<Integer, Integer> hashMap = new HashMap<>();
+            for (int i = 0; i < nums.length; i++) {
+                if (hashMap.containsKey(nums[i])) {
+                    return new int[]{i, hashMap.get(nums[i])};
+                } else {
+                    hashMap.put(target - nums[i], i);
+                }
+            }
             return null;
+        }
+
+        public static void main(String[] args) {
+            Solution solution = new Solution();
+            int[] ints = {2, 7, 11, 15};
+            int[] ints1 = solution.twoSum(ints, 13);
+            for (int i : ints1) {
+                System.out.println(i);
+            }
         }
     }
 //leetcode submit region end(Prohibit modification and deletion)
