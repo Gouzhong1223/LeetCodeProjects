@@ -23,48 +23,30 @@ public class P32LongestValidParentheses {
     //leetcode submit region begin(Prohibit modification and deletion)
     static class Solution {
         public int longestValidParentheses(String s) {
-            // 最大数量
-            int max = 0;
-            // 标识下一次需不需要重新计数
-            boolean b = false;
-            Stack<Character> characters = new Stack<>();
+            if (s.length() == 0 || s == null) {
+                return 0;
+            }
+            int res = 0;
+            Stack<Integer> stack = new Stack<>();
+            stack.push(-1);
             for (int i = 0; i < s.length(); i++) {
-                char c = s.charAt(i);
-                if (characters.isEmpty() && c == ')') {
-                    characters.push(c);
-                    // 下一次需要重新开始计数
-                    b = true;
-                    continue;
-                }
-                if (c == ')') {
-                    if (characters.peek() == '(') {
-                        characters.pop();
-                        if (b) {
-                            max = 2;
-                        } else {
-                            max += 2;
-                        }
-                        if (characters.isEmpty()) {
-                            b = false;
-                        } else {
-                            b = characters.peek() != '(';
-                        }
-                    }
+                if (s.charAt(i) == '(') {
+                    stack.push(i);
                 } else {
-                    if (characters.isEmpty()) {
-                        b = false;
+                    stack.pop();
+                    if (stack.isEmpty()) {
+                        stack.push(i);
                     } else {
-                        b = characters.peek() == '(';
+                        res = Math.max(res, i - stack.peek());
                     }
-                    characters.push(c);
                 }
             }
-            return max;
+            return res;
         }
 
         public static void main(String[] args) {
             Solution solution = new Solution();
-            System.out.println(solution.longestValidParentheses("()(())"));
+            System.out.println(solution.longestValidParentheses("))()(())"));
         }
     }
 //leetcode submit region end(Prohibit modification and deletion)
