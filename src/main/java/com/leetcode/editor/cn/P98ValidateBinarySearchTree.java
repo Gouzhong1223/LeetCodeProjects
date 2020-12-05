@@ -31,7 +31,9 @@ package com.leetcode.editor.cn;
 //     根节点的值为 5 ，但是其右子节点值为 4 。
 //
 // Related Topics 树 深度优先搜索 递归
-// 👍 848 👎 0
+// 👍 849 👎 0
+
+import java.util.Stack;
 
 public class P98ValidateBinarySearchTree {
     //leetcode submit region begin(Prohibit modification and deletion)
@@ -53,92 +55,22 @@ public class P98ValidateBinarySearchTree {
      */
     class Solution {
         public boolean isValidBST(TreeNode root) {
-            boolean res = true;
-            if (root.left == null && root.right == null) {
-                return true;
-            }
-            if (root.left != null && root.right != null) {
-                if (root.left.val >= root.val || root.right.val <= root.val) {
+            Stack<TreeNode> stack = new Stack<>();
+            double inOrder = -Double.MAX_VALUE;
+            while (!stack.isEmpty() || root != null) {
+                while (root != null) {
+                    stack.push(root);
+                    root = root.left;
+                }
+                root = stack.pop();
+                if (root.val <= inOrder) {
                     return false;
                 }
-                res = res & isValid(root.left, root.val) & isValid(root.right, root.val);
+                inOrder = root.val;
+                root = root.right;
             }
-            if (root.left == null) {
-                if (root.right.val <= root.val) {
-                    return false;
-                }
-            }
-            if (root.right == null) {
-                if (root.left.val >= root.val) {
-                    return false;
-                }
-            }
-            return res;
+            return true;
         }
-
-        public boolean isValid(TreeNode root, int father) {
-            if (root.left == null && root.right == null) {
-                return true;
-            }
-            boolean res = true;
-            if (root.left != null && root.right != null) {
-                if (root.left.val >= root.val || root.right.val <= root.val || root.left.val >= father || root.right.val >= father) {
-                    return false;
-                } else {
-                    res = res & isValid(root.left, root.val) & isValid(root.right, root.val);
-                }
-            } else if (root.left == null) {
-                if (root.right.val <= root.val || root.right.val >= father) {
-                    res = false;
-                } else {
-                    res = res & isValid(root.right, root.val);
-                }
-            } else if (root.right == null) {
-                if (root.left.val >= root.val || root.left.val <= father) {
-                    res = false;
-                } else {
-                    res = res & isValid(root.left, root.val);
-                }
-            }
-            return res;
-        }
-
-//        public static void main(String[] args) {
-//            Solution solution = new Solution();
-//            TreeNode treeNode = new TreeNode(5);
-//            TreeNode treeNode1 = new TreeNode(1);
-//            TreeNode treeNode2 = new TreeNode(4);
-//            treeNode.left = treeNode1;
-//            treeNode.right = treeNode2;
-//
-//            TreeNode treeNode3 = new TreeNode(3);
-//            TreeNode treeNode4 = new TreeNode(6);
-//            treeNode2.left = treeNode3;
-//            treeNode2.right = treeNode4;
-//            TreeNode treeNode = new TreeNode(2);
-//            treeNode.left = new TreeNode(1);
-//            treeNode.right = new TreeNode(3);
-//            TreeNode treeNode = new TreeNode(1);
-//            treeNode.right = new TreeNode(1);
-
-//
-//            System.out.println(solution.isValidBST(treeNode));
-//        }
-
-//        public static void main(String[] args) {
-//            Solution solution = new Solution();
-//            TreeNode treeNode = new TreeNode(5);
-//            TreeNode treeNode1 = new TreeNode(4);
-//            TreeNode treeNode2 = new TreeNode(6);
-//            treeNode.left = treeNode1;
-//            treeNode.right = treeNode2;
-//            TreeNode treeNode3 = new TreeNode(3);
-//            TreeNode treeNode4 = new TreeNode(7);
-//
-//            treeNode2.left = treeNode3;
-//            treeNode2.right = treeNode4;
-//            System.out.println(solution.isValidBST(treeNode));
-//        }
     }
 //leetcode submit region end(Prohibit modification and deletion)
 
