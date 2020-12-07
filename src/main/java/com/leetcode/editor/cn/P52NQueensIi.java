@@ -36,12 +36,41 @@ package com.leetcode.editor.cn;
 // Related Topics 回溯算法
 // 👍 213 👎 0
 
+import java.util.HashSet;
+
 public class P52NQueensIi {
     //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
+        int res = 0;
+
         public int totalNQueens(int n) {
-            return 1;
+            HashSet<Integer> pie = new HashSet<>();
+            HashSet<Integer> na = new HashSet<>();
+            HashSet<Integer> shu = new HashSet<>();
+            dfs(n, pie, na, shu, 0);
+            return res;
         }
+
+        private void dfs(int n, HashSet<Integer> pie, HashSet<Integer> na, HashSet<Integer> shu, int row) {
+            if (row == n) {
+                res += 1;
+                return;
+            }
+            for (int i = 0; i < n; i++) {
+                if (pie.contains(i - row) || na.contains(i + row) || shu.contains(i)) {
+                    continue;
+                }
+                pie.add(i - row);
+                na.add(i + row);
+                shu.add(i);
+                dfs(n, pie, na, shu, row + 1);
+                pie.remove(i - row);
+                na.remove(i + row);
+                shu.remove(i);
+            }
+        }
+
+
     }
 //leetcode submit region end(Prohibit modification and deletion)
 
