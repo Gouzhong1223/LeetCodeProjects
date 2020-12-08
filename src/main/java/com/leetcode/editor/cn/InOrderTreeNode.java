@@ -20,8 +20,8 @@ public class InOrderTreeNode {
         if (root == null) {
             return;
         }
-        res.add(root.val);
         inOrderTreeNode(root.left, res);
+        res.add(root.val);
         inOrderTreeNode(root.right, res);
     }
 
