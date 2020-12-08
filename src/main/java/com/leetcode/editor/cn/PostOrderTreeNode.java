@@ -20,8 +20,8 @@ public class PostOrderTreeNode {
         if (root == null) {
             return;
         }
-        postOrderTree(root.right, res);
         postOrderTree(root.left, res);
+        postOrderTree(root.right, res);
         res.add(root.val);
     }
 
