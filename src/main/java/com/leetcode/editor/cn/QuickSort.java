@@ -1,5 +1,7 @@
 package com.leetcode.editor.cn;
 
+import java.util.ArrayList;
+
 /**
  * @Author : Gouzhong
  * @Blog : www.gouzhong1223.com
@@ -15,6 +17,21 @@ public class QuickSort {
 
     public void sort(int[] nums) {
         quickSort(nums, 0, nums.length - 1);
+    }
+
+    public ArrayList<Integer> GetLeastNumbers_Solution(int[] input, int k) {
+        ArrayList<Integer> res = new ArrayList<>();
+        if (k >= input.length) {
+            for (int i : input) {
+                res.add(i);
+            }
+            return res;
+        }
+        sort(input);
+        for (int i = 0; i < k; i++) {
+            res.add(input[i]);
+        }
+        return res;
     }
 
     public void quickSort(int[] nums, int low, int high) {
@@ -45,13 +62,10 @@ public class QuickSort {
 
 
     public static void main(String[] args) {
-        System.out.println(System.currentTimeMillis());
-        int[] ints = {4, 2, 6, 7, 4, 8, 9, 8, 1, 2};
+//        System.out.println(System.currentTimeMillis());
+        int[] ints = {4, 5, 1, 6, 2, 7, 3, 8};
         QuickSort quickSort = new QuickSort();
-        quickSort.sort(ints);
-        for (int anInt : ints) {
-            System.out.println(anInt);
-        }
-        System.out.println(System.currentTimeMillis());
+        ArrayList<Integer> integers = quickSort.GetLeastNumbers_Solution(ints, 8);
+        integers.forEach(System.out::println);
     }
 }
