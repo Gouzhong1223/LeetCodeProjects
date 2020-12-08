@@ -36,21 +36,27 @@ public class P42TrappingRainWater {
     //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
         public int trap(int[] height) {
+            if (height.length == 0) {
+                return 0;
+            }
             int length = height.length;
             int res = 0;
+            int[] leftMaxs = new int[length];
+            int[] rightMaxs = new int[length];
+            leftMaxs[0] = height[0];
+            rightMaxs[length - 1] = height[length - 1];
+
             for (int i = 1; i < length - 1; i++) {
-                int leftMax = 0, rightMax = 0;
-                // 寻找右边最高的柱子
-                for (int j = i; j < length; j++) {
-                    rightMax = Math.max(rightMax, height[j]);
-                }
-                // 寻找左边最高的柱子
-                for (int j = i; j >= 0; j--) {
-                    leftMax = Math.max(leftMax, height[j]);
-                }
-                // 当前柱子能接的最多的水就是左右节点最高柱子中最爱的柱子减去当前柱子的高度
-                res += Math.min(leftMax, rightMax) - height[i];
+                leftMaxs[i] = Math.max(height[i], leftMaxs[i - 1]);
             }
+            for (int i = length - 2; i >= 0; i--) {
+                rightMaxs[i] = Math.max(height[i], rightMaxs[i + 1]);
+            }
+            for (int i = 1; i < length - 1; i++) {
+                // 当前柱子能接的最多的水就是左右节点最高柱子中最爱的柱子减去当前柱子的高度
+                res += Math.min(leftMaxs[i], rightMaxs[i]) - height[i];
+            }
+
             return res;
         }
     }
