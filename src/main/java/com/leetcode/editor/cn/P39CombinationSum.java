@@ -67,11 +67,14 @@ public class P39CombinationSum {
             }
 
             for (int i = begin; i < len; i++) {
+                // 剪枝
                 if (target - candidates[i] < 0) {
                     break;
                 }
+                // 添加试错条件
                 path.addLast(candidates[i]);
                 dfs(candidates, i, len, target - candidates[i], path, res);
+                // 删除试错条件
                 path.removeLast();
             }
         }
