@@ -22,7 +22,6 @@ package com.leetcode.editor.cn;
 // Related Topics 树 广度优先搜索
 // 👍 364 👎 0
 
-import java.util.ArrayList;
 import java.util.Deque;
 import java.util.LinkedList;
 import java.util.List;
@@ -41,7 +40,7 @@ public class P107BinaryTreeLevelOrderTraversalIi {
      */
     class Solution {
         public List<List<Integer>> levelOrderBottom(TreeNode root) {
-            List<List<Integer>> res = new ArrayList<>();
+            List<List<Integer>> res = new LinkedList<>();
             Deque<TreeNode> queue = new LinkedList<>();
             if (root == null) {
                 return res;
@@ -49,7 +48,7 @@ public class P107BinaryTreeLevelOrderTraversalIi {
             queue.add(root);
             while (!queue.isEmpty()) {
                 int size = queue.size();
-                List<Integer> integers = new ArrayList<>();
+                List<Integer> integers = new LinkedList<>();
                 for (int i = 0; i < size; i++) {
                     TreeNode pop = queue.pop();
                     integers.add(pop.val);
