@@ -49,11 +49,22 @@ public class P124BinaryTreeMaximumPathSum {
      * }
      */
     class Solution {
+        int maxSum = Integer.MIN_VALUE;
+
         public int maxPathSum(TreeNode root) {
+            helper(root);
+            return maxSum;
+        }
+
+        public int helper(TreeNode root) {
             if (root == null) {
                 return 0;
             }
-            return 10;
+            int leftMax = Math.max(helper(root.left), 0);
+            int rightMax = Math.max(helper(root.right), 0);
+            int newPrice = root.val + leftMax + rightMax;
+            maxSum = Math.max(newPrice, maxSum);
+            return root.val + Math.max(leftMax, rightMax);
         }
     }
 //leetcode submit region end(Prohibit modification and deletion)
