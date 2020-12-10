@@ -22,6 +22,9 @@ package com.leetcode.editor.cn;
 // Related Topics 栈 树 广度优先搜索
 // 👍 302 👎 0
 
+import java.util.ArrayList;
+import java.util.Deque;
+import java.util.LinkedList;
 import java.util.List;
 
 public class P103BinaryTreeZigzagLevelOrderTraversal {
@@ -38,7 +41,34 @@ public class P103BinaryTreeZigzagLevelOrderTraversal {
      */
     class Solution {
         public List<List<Integer>> zigzagLevelOrder(TreeNode root) {
-            return null;
+            List<List<Integer>> res = new ArrayList<>();
+            if (root == null) {
+                return res;
+            }
+            int deepth = 0;
+            Deque<TreeNode> queue = new LinkedList<>();
+            queue.add(root);
+            while (!queue.isEmpty()) {
+                List<Integer> temp = new ArrayList<>();
+                int size = queue.size();
+                for (int i = 0; i < size; i++) {
+                    TreeNode pop = queue.pop();
+                    if (deepth % 2 == 0) {
+                        temp.add(pop.val);
+                    } else {
+                        temp.add(0, pop.val);
+                    }
+                    if (pop.left != null) {
+                        queue.add(pop.left);
+                    }
+                    if (pop.right != null) {
+                        queue.add(pop.right);
+                    }
+                }
+                deepth++;
+                res.add(temp);
+            }
+            return res;
         }
     }
 //leetcode submit region end(Prohibit modification and deletion)

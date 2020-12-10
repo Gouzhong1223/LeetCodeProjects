@@ -1,15 +1,15 @@
 [
   {
     "articleLive": 2,
-    "formTitle": "[62]不同路径",
-    "frontendQuestionId": "62",
+    "formTitle": "[860]柠檬水找零",
+    "frontendQuestionId": "860",
     "leaf": true,
-    "level": 2,
+    "level": 1,
     "nodeType": "def",
-    "questionId": "62",
-    "status": "ac",
-    "title": "不同路径",
-    "titleSlug": "unique-paths"
+    "questionId": "890",
+    "status": "",
+    "title": "柠檬水找零",
+    "titleSlug": "lemonade-change"
   },
   {
     "articleLive": 2,
@@ -742,6 +742,18 @@
     "status": "ac",
     "title": "旋转链表",
     "titleSlug": "rotate-list"
+  },
+  {
+    "articleLive": 2,
+    "formTitle": "[62]不同路径",
+    "frontendQuestionId": "62",
+    "leaf": true,
+    "level": 2,
+    "nodeType": "def",
+    "questionId": "62",
+    "status": "ac",
+    "title": "不同路径",
+    "titleSlug": "unique-paths"
   },
   {
     "articleLive": 2,
@@ -10306,18 +10318,6 @@
     "status": "",
     "title": "亲密字符串",
     "titleSlug": "buddy-strings"
-  },
-  {
-    "articleLive": 2,
-    "formTitle": "[860]柠檬水找零",
-    "frontendQuestionId": "860",
-    "leaf": true,
-    "level": 1,
-    "nodeType": "def",
-    "questionId": "890",
-    "status": "",
-    "title": "柠檬水找零",
-    "titleSlug": "lemonade-change"
   },
   {
     "articleLive": 2,
@@ -20170,6 +20170,18 @@
     "status": "",
     "title": "最小不兼容性",
     "titleSlug": "minimum-incompatibility"
+  },
+  {
+    "articleLive": 2,
+    "formTitle": "[1682]Longest Palindromic Subsequence II",
+    "frontendQuestionId": "1682",
+    "leaf": true,
+    "level": 2,
+    "nodeType": "def",
+    "questionId": "1822",
+    "status": "lock",
+    "title": "Longest Palindromic Subsequence II",
+    "titleSlug": "longest-palindromic-subsequence-ii"
   },
   {
     "articleLive": 2,
