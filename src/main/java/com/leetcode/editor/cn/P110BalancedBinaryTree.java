@@ -62,31 +62,22 @@ public class P110BalancedBinaryTree {
      */
     class Solution {
         public boolean isBalanced(TreeNode root) {
-            if (root == null) {
-                return true;
-            }
-            TreeNode left = root.left;
-            TreeNode right = root.right;
-            return false;
+            return recur(root) != -1;
         }
 
-        public class TreeNode {
-            int val;
-            TreeNode left;
-            TreeNode right;
-
-            TreeNode() {
+        private int recur(TreeNode root) {
+            if (root == null) {
+                return 0;
             }
-
-            TreeNode(int val) {
-                this.val = val;
+            int left = recur(root.left);
+            if (left == -1) {
+                return -1;
             }
-
-            TreeNode(int val, TreeNode left, TreeNode right) {
-                this.val = val;
-                this.left = left;
-                this.right = right;
+            int right = recur(root.right);
+            if (right == -1) {
+                return -1;
             }
+            return Math.abs(left - right) < 2 ? Math.max(left, right) + 1 : -1;
         }
     }
 //leetcode submit region end(Prohibit modification and deletion)
