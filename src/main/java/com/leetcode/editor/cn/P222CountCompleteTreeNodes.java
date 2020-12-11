@@ -19,8 +19,6 @@ package com.leetcode.editor.cn;
 // Related Topics 树 二分查找
 // 👍 343 👎 0
 
-import java.util.concurrent.CopyOnWriteArrayList;
-
 public class P222CountCompleteTreeNodes {
     //leetcode submit region begin(Prohibit modification and deletion)
 
@@ -35,10 +33,25 @@ public class P222CountCompleteTreeNodes {
      */
     class Solution {
         public int countNodes(TreeNode root) {
-            CopyOnWriteArrayList<Integer> integers = new CopyOnWriteArrayList<>();
-            integers.add(1);
-            integers.get(0);
-            return 0;
+            if (root == null) {
+                return 0;
+            }
+            int left = countLevel(root.left);
+            int right = countLevel(root.right);
+            if (left == right) {
+                return countNodes(root.right) + (1 << left);
+            } else {
+                return countNodes(root.left) + (1 << right);
+            }
+        }
+
+        public int countLevel(TreeNode root) {
+            int level = 0;
+            while (root != null) {
+                level++;
+                root = root.left;
+            }
+            return level;
         }
     }
 //leetcode submit region end(Prohibit modification and deletion)
