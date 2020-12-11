@@ -443,6 +443,14 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/leetcode/editor/cn/P173BinarySearchTreeIterator.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/src/main/java/com/leetcode/editor/cn/P173BinarySearchTreeIterator.java" />
+              <option name="questionId" value="173" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/main/java/com/leetcode/editor/cn/P175CombineTwoTables.java">
           <value>
             <LeetcodeEditor>
@@ -640,6 +648,14 @@
             <LeetcodeEditor>
               <option name="path" value="$PROJECT_DIR$/src/main/java/com/leetcode/editor/cn/P24SwapNodesInPairs.java" />
               <option name="questionId" value="24" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/leetcode/editor/cn/P257BinaryTreePaths.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/src/main/java/com/leetcode/editor/cn/P257BinaryTreePaths.java" />
+              <option name="questionId" value="257" />
             </LeetcodeEditor>
           </value>
         </entry>

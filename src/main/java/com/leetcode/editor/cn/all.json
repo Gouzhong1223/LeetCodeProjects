@@ -1,15 +1,15 @@
 [
   {
     "articleLive": 2,
-    "formTitle": "[860]柠檬水找零",
-    "frontendQuestionId": "860",
+    "formTitle": "[649]Dota2 参议院",
+    "frontendQuestionId": "649",
     "leaf": true,
-    "level": 1,
+    "level": 2,
     "nodeType": "def",
-    "questionId": "890",
+    "questionId": "649",
     "status": "",
-    "title": "柠檬水找零",
-    "titleSlug": "lemonade-change"
+    "title": "Dota2 参议院",
+    "titleSlug": "dota2-senate"
   },
   {
     "articleLive": 2,
@@ -1243,7 +1243,7 @@
     "level": 2,
     "nodeType": "def",
     "questionId": "103",
-    "status": "",
+    "status": "ac",
     "title": "二叉树的锯齿形层次遍历",
     "titleSlug": "binary-tree-zigzag-level-order-traversal"
   },
@@ -1291,7 +1291,7 @@
     "level": 1,
     "nodeType": "def",
     "questionId": "107",
-    "status": "",
+    "status": "ac",
     "title": "二叉树的层次遍历 II",
     "titleSlug": "binary-tree-level-order-traversal-ii"
   },
@@ -1303,7 +1303,7 @@
     "level": 1,
     "nodeType": "def",
     "questionId": "108",
-    "status": "",
+    "status": "ac",
     "title": "将有序数组转换为二叉搜索树",
     "titleSlug": "convert-sorted-array-to-binary-search-tree"
   },
@@ -1327,7 +1327,7 @@
     "level": 1,
     "nodeType": "def",
     "questionId": "110",
-    "status": "",
+    "status": "ac",
     "title": "平衡二叉树",
     "titleSlug": "balanced-binary-tree"
   },
@@ -1351,7 +1351,7 @@
     "level": 1,
     "nodeType": "def",
     "questionId": "112",
-    "status": "",
+    "status": "ac",
     "title": "路径总和",
     "titleSlug": "path-sum"
   },
@@ -1363,7 +1363,7 @@
     "level": 2,
     "nodeType": "def",
     "questionId": "113",
-    "status": "",
+    "status": "ac",
     "title": "路径总和 II",
     "titleSlug": "path-sum-ii"
   },
@@ -1411,7 +1411,7 @@
     "level": 2,
     "nodeType": "def",
     "questionId": "117",
-    "status": "",
+    "status": "ac",
     "title": "填充每个节点的下一个右侧节点指针 II",
     "titleSlug": "populating-next-right-pointers-in-each-node-ii"
   },
@@ -1495,7 +1495,7 @@
     "level": 3,
     "nodeType": "def",
     "questionId": "124",
-    "status": "",
+    "status": "ac",
     "title": "二叉树中的最大路径和",
     "titleSlug": "binary-tree-maximum-path-sum"
   },
@@ -1555,7 +1555,7 @@
     "level": 2,
     "nodeType": "def",
     "questionId": "129",
-    "status": "",
+    "status": "ac",
     "title": "求根到叶子节点数字之和",
     "titleSlug": "sum-root-to-leaf-numbers"
   },
@@ -7789,18 +7789,6 @@
   },
   {
     "articleLive": 2,
-    "formTitle": "[649]Dota2 参议院",
-    "frontendQuestionId": "649",
-    "leaf": true,
-    "level": 2,
-    "nodeType": "def",
-    "questionId": "649",
-    "status": "",
-    "title": "Dota2 参议院",
-    "titleSlug": "dota2-senate"
-  },
-  {
-    "articleLive": 2,
     "formTitle": "[650]只有两个键的键盘",
     "frontendQuestionId": "650",
     "leaf": true,
@@ -10318,6 +10306,18 @@
     "status": "",
     "title": "亲密字符串",
     "titleSlug": "buddy-strings"
+  },
+  {
+    "articleLive": 2,
+    "formTitle": "[860]柠檬水找零",
+    "frontendQuestionId": "860",
+    "leaf": true,
+    "level": 1,
+    "nodeType": "def",
+    "questionId": "890",
+    "status": "",
+    "title": "柠檬水找零",
+    "titleSlug": "lemonade-change"
   },
   {
     "articleLive": 2,
@@ -20182,6 +20182,18 @@
     "status": "lock",
     "title": "Longest Palindromic Subsequence II",
     "titleSlug": "longest-palindromic-subsequence-ii"
+  },
+  {
+    "articleLive": 2,
+    "formTitle": "[1683]Invalid Tweets",
+    "frontendQuestionId": "1683",
+    "leaf": true,
+    "level": 1,
+    "nodeType": "def",
+    "questionId": "1827",
+    "status": "lock",
+    "title": "Invalid Tweets",
+    "titleSlug": "invalid-tweets"
   },
   {
     "articleLive": 2,
