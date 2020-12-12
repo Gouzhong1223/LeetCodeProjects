@@ -571,6 +571,14 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/leetcode/editor/cn/P215KthLargestElementInAnArray.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/src/main/java/com/leetcode/editor/cn/P215KthLargestElementInAnArray.java" />
+              <option name="questionId" value="215" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/main/java/com/leetcode/editor/cn/P21MergeTwoSortedLists.java">
           <value>
             <LeetcodeEditor>
@@ -608,6 +616,14 @@
             <LeetcodeEditor>
               <option name="path" value="$PROJECT_DIR$/src/main/java/com/leetcode/editor/cn/P230KthSmallestElementInABst.java" />
               <option name="questionId" value="230" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/leetcode/editor/cn/P232ImplementQueueUsingStacks.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/src/main/java/com/leetcode/editor/cn/P232ImplementQueueUsingStacks.java" />
+              <option name="questionId" value="232" />
             </LeetcodeEditor>
           </value>
         </entry>
