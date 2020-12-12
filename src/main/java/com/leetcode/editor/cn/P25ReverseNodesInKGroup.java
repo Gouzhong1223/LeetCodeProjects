@@ -26,6 +26,9 @@ package com.leetcode.editor.cn;
 // Related Topics 链表
 // 👍 784 👎 0
 
+import java.util.ArrayDeque;
+import java.util.Deque;
+
 public class P25ReverseNodesInKGroup {
     //leetcode submit region begin(Prohibit modification and deletion)
 
@@ -44,20 +47,43 @@ public class P25ReverseNodesInKGroup {
         ListNode successor = null;
 
         public ListNode reverseKGroup(ListNode head, int k) {
-            ListNode pre = new ListNode(0);
-            pre.next = head;
-            int counter = 0;
-            while (pre.next != null) {
-                counter += 1;
-                pre = pre.next;
+//            ListNode pre = new ListNode(0);
+//            pre.next = head;
+//            int counter = 0;
+//            while (pre.next != null) {
+//                counter += 1;
+//                pre = pre.next;
+//            }
+//            if (k == 0 || counter < k) {
+//                return head;
+//            }
+//            for (int i = 1; counter >= k; i = i + k, counter -= k) {
+//                head = reverseMN(head, i, i + k - 1);
+//            }
+//            return head;
+            ListNode dummy = new ListNode(0);
+            ListNode p = dummy;
+            Deque<ListNode> stack = new ArrayDeque<>();
+            while (true) {
+                int count = 0;
+                ListNode temp = head;
+                while (temp != null && count < k) {
+                    stack.add(temp);
+                    count++;
+                    temp = temp.next;
+                }
+                if (count != k) {
+                    p.next = head;
+                    break;
+                }
+                while (!stack.isEmpty()) {
+                    p.next = stack.pollLast();
+                    p = p.next;
+                }
+                p.next = temp;
+                head = temp;
             }
-            if (k == 0 || counter < k) {
-                return head;
-            }
-            for (int i = 1; counter >= k; i = i + k, counter -= k) {
-                head = reverseMN(head, i, i + k - 1);
-            }
-            return head;
+            return dummy.next;
         }
 
         /**
