@@ -1091,6 +1091,14 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/leetcode/editor/cn/P54SpiralMatrix.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/src/main/java/com/leetcode/editor/cn/P54SpiralMatrix.java" />
+              <option name="questionId" value="54" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/main/java/com/leetcode/editor/cn/P55JumpGame.java">
           <value>
             <LeetcodeEditor>
@@ -1304,6 +1312,14 @@
             <LeetcodeEditor>
               <option name="path" value="$PROJECT_DIR$/src/main/java/com/leetcode/editor/cn/P92ReverseLinkedListIi.java" />
               <option name="questionId" value="92" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/leetcode/editor/cn/P93RestoreIpAddresses.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/src/main/java/com/leetcode/editor/cn/P93RestoreIpAddresses.java" />
+              <option name="questionId" value="93" />
             </LeetcodeEditor>
           </value>
         </entry>
