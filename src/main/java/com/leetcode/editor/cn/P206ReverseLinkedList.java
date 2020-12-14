@@ -32,7 +32,11 @@ public class P206ReverseLinkedList {
             listNode.next = listNode1;
             listNode1.next = listNode2;
             listNode2.next = listNode3;
-            solution.reverseList(listNode);
+            ListNode listNode4 = solution.reverseList(listNode);
+            while (listNode4 != null) {
+                System.out.println(listNode4.val);
+                listNode4 = listNode4.next;
+            }
         }
 
         public ListNode reverseList(ListNode head) {
