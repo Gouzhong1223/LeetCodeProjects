@@ -50,7 +50,16 @@ public class P99RecoverBinarySearchTree {
      * }
      */
     class Solution {
+        int prev = Integer.MIN_VALUE;
         public void recoverTree(TreeNode root) {
+            if (root == null) {
+                return;
+            }
+            recoverTree(root.left);
+            if (root.val < prev) {
+
+            }
+            recoverTree(root.right);
 
         }
     }

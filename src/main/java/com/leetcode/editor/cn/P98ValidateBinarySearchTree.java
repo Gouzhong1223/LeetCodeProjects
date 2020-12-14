@@ -33,8 +33,6 @@ package com.leetcode.editor.cn;
 // Related Topics 树 深度优先搜索 递归
 // 👍 849 👎 0
 
-import java.util.Stack;
-
 public class P98ValidateBinarySearchTree {
     //leetcode submit region begin(Prohibit modification and deletion)
 
@@ -54,22 +52,19 @@ public class P98ValidateBinarySearchTree {
      * }
      */
     class Solution {
+        long pre = Long.MIN_VALUE;
         public boolean isValidBST(TreeNode root) {
-            Stack<TreeNode> stack = new Stack<>();
-            double inOrder = -Double.MAX_VALUE;
-            while (!stack.isEmpty() || root != null) {
-                while (root != null) {
-                    stack.push(root);
-                    root = root.left;
-                }
-                root = stack.pop();
-                if (root.val <= inOrder) {
-                    return false;
-                }
-                inOrder = root.val;
-                root = root.right;
+            if (root == null) {
+                return true;
             }
-            return true;
+            if (!isValidBST(root.left)) {
+                return false;
+            }
+            if (root.val <= pre) {
+                return false;
+            }
+            pre = root.val;
+            return isValidBST(root.right);
         }
     }
 //leetcode submit region end(Prohibit modification and deletion)

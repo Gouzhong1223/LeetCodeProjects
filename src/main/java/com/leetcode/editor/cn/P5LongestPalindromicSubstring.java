@@ -24,19 +24,41 @@ public class P5LongestPalindromicSubstring {
             if (length < 2) {
                 return s;
             }
-            int maxLen = 1;
-            int start = 0;
-            char[] charArray = s.toCharArray();
-            // 开启两个指针分别向右边递推
-            for (int i = 0; i < length - 1; i++) {
+            int[][] dp = new int[length][length];
+            for (int i = 0; i < length; i++) {
+                // 初始化状态
+                dp[i][i] = 1;
+            }
+            int maxStart = 0;
+            int maxEnd = 0;
+            int maxLength = 1;
+            for (int i = length - 2; i >= 0; i--) {
                 for (int j = i + 1; j < length; j++) {
-                    if (j - i + 1 > maxLen && validPalindromic(charArray, i, j)) {
-                        maxLen = j - i + 1;
-                        start = i;
+                    if (s.charAt(i) == s.charAt(j)) {
+                        dp[i][j] = dp[i + 1][j - 1] + 2;
+                        maxStart = i;
+                        maxEnd = j;
+                    } else {
+                        dp[i][j] = Math.max(dp[i + 1][j], dp[i][j - 1]);
                     }
                 }
             }
-            return s.substring(start, start + maxLen);
+            return s.substring(maxStart, maxEnd + 1);
+
+//            int maxLen = 1;
+//            int start = 0;
+//            char[] charArray = s.toCharArray();
+//            // 开启两个指针分别向右边递推
+//            for (int i = 0; i < length - 1; i++) {
+//                for (int j = i + 1; j < length; j++) {
+//                    if (j - i + 1 > maxLen && validPalindromic(charArray, i, j)) {
+//                        maxLen = j - i + 1;
+//                        start = i;
+//                    }
+//                }
+//            }
+//            return s.substring(start, start + maxLen);
+
         }
 
         /**
@@ -52,6 +74,11 @@ public class P5LongestPalindromicSubstring {
             }
             return true;
         }
+
+//        public static void main(String[] args) {
+//            Solution solution = new Solution();
+//            solution.longestPalindrome("")
+//        }
     }
 //leetcode submit region end(Prohibit modification and deletion)
 
