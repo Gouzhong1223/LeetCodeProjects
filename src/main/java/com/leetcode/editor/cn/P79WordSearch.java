@@ -47,22 +47,20 @@ public class P79WordSearch {
         }
 
         public boolean dfs(char[][] board, char[] words, int i, int j, int k) {
-            if (i >= board.length || i < 0 || j > board[0].length || j < 0 || board[i][j] != words[k]) {
+            if (i >= board.length || i < 0 || j >= board[0].length || j < 0 || board[i][j] != words[k]) {
                 // i >= board.length || i < 0 || j >= board[0].length || j < 0 || board[i][j] != word[k]
                 return false;
             }
             if (k == words.length - 1) {
                 return true;
             }
-            board[i][j] = '\0';
+            char temp = board[i][j];
+            board[i][j] = '.';
             boolean res = dfs(board, words, i + 1, j, k + 1)
                     || dfs(board, words, i - 1, j, k + 1)
                     || dfs(board, words, i, j + 1, k + 1)
                     || dfs(board, words, i, j - 1, k + 1);
-            // boolean res = dfs(board, word, i + 1, j, k + 1) || dfs(board, word, i - 1, j, k + 1) ||
-            //                      dfs(board, word, i, j + 1, k + 1) || dfs(board, word, i , j - 1, k + 1);
-
-            board[i][j] = words[k];
+            board[i][j] = temp;
             return res;
         }
     }
