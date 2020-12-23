@@ -57,7 +57,40 @@ public class P85MaximalRectangle {
     //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
         public int maximalRectangle(char[][] matrix) {
-            return 0;
+            int length = matrix.length;
+            if (length == 0) {
+                return 0;
+            }
+            int res = 0;
+            int[] heights = new int[matrix[0].length];
+            for (char[] chars : matrix) {
+                for (int j = 0; j < matrix[0].length; j++) {
+                    if (chars[j] == '1') {
+                        heights[j]++;
+                    } else {
+                        heights[j] = 0;
+                    }
+                }
+                res = Math.max(res, largestRectangleArea(heights));
+            }
+            return res;
+        }
+
+        public int largestRectangleArea(int[] heights) {
+            int length = heights.length;
+            int res = 0;
+            for (int i = 0; i < length; i++) {
+                int w = 1, j = i, h = heights[i];
+                while (--j >= 0 && heights[j] >= h) {
+                    w++;
+                }
+                j = i;
+                while (++j < length && heights[j] >= h) {
+                    w++;
+                }
+                res = Math.max(res, h * w);
+            }
+            return res;
         }
     }
 //leetcode submit region end(Prohibit modification and deletion)
