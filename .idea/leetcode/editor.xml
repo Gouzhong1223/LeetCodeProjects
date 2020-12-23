@@ -491,6 +491,14 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/leetcode/editor/cn/P169MajorityElement.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/src/main/java/com/leetcode/editor/cn/P169MajorityElement.java" />
+              <option name="questionId" value="169" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/main/java/com/leetcode/editor/cn/P16ThreeSumClosest.java">
           <value>
             <LeetcodeEditor>
@@ -1568,6 +1576,14 @@
             <LeetcodeEditor>
               <option name="path" value="$PROJECT_DIR$/src/main/java/com/leetcode/editor/cn/P剑指 Offer 06CongWeiDaoTouDaYinLianBiaoLcof.java" />
               <option name="questionId" value="100282" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/leetcode/editor/cn/P剑指 Offer 11XuanZhuanShuZuDeZuiXiaoShuZiLcof.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/src/main/java/com/leetcode/editor/cn/P剑指 Offer 11XuanZhuanShuZuDeZuiXiaoShuZiLcof.java" />
+              <option name="questionId" value="100278" />
             </LeetcodeEditor>
           </value>
         </entry>

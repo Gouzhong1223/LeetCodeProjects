@@ -47,7 +47,27 @@ public class P876MiddleOfTheLinkedList {
      */
     class Solution {
         public ListNode middleNode(ListNode head) {
-            return null;
+            if (head == null || head.next == null) {
+                return head;
+            }
+            ListNode counter = head;
+            int count = 0;
+            while (counter != null) {
+                count++;
+                counter = counter.next;
+            }
+            counter = head;
+            int k;
+            if (count % 2 == 0) {
+                k = (count / 2) + 1;
+            } else {
+                k = ((count - 1) / 2) + 1;
+            }
+            while (k > 1) {
+                counter = counter.next;
+                k--;
+            }
+            return counter;
         }
     }
 //leetcode submit region end(Prohibit modification and deletion)
