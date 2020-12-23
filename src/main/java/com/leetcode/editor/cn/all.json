@@ -1,15 +1,15 @@
 [
   {
     "articleLive": 2,
-    "formTitle": "[103]二叉树的锯齿形层序遍历",
-    "frontendQuestionId": "103",
+    "formTitle": "[387]字符串中的第一个唯一字符",
+    "frontendQuestionId": "387",
     "leaf": true,
-    "level": 2,
+    "level": 1,
     "nodeType": "def",
-    "questionId": "103",
-    "status": "ac",
-    "title": "二叉树的锯齿形层序遍历",
-    "titleSlug": "binary-tree-zigzag-level-order-traversal"
+    "questionId": "387",
+    "status": "",
+    "title": "字符串中的第一个唯一字符",
+    "titleSlug": "first-unique-character-in-a-string"
   },
   {
     "articleLive": 2,
@@ -763,7 +763,7 @@
     "level": 2,
     "nodeType": "def",
     "questionId": "63",
-    "status": "",
+    "status": "ac",
     "title": "不同路径 II",
     "titleSlug": "unique-paths-ii"
   },
@@ -775,7 +775,7 @@
     "level": 2,
     "nodeType": "def",
     "questionId": "64",
-    "status": "",
+    "status": "ac",
     "title": "最小路径和",
     "titleSlug": "minimum-path-sum"
   },
@@ -871,7 +871,7 @@
     "level": 3,
     "nodeType": "def",
     "questionId": "72",
-    "status": "",
+    "status": "ac",
     "title": "编辑距离",
     "titleSlug": "edit-distance"
   },
@@ -907,7 +907,7 @@
     "level": 2,
     "nodeType": "def",
     "questionId": "75",
-    "status": "",
+    "status": "ac",
     "title": "颜色分类",
     "titleSlug": "sort-colors"
   },
@@ -943,7 +943,7 @@
     "level": 2,
     "nodeType": "def",
     "questionId": "78",
-    "status": "",
+    "status": "ac",
     "title": "子集",
     "titleSlug": "subsets"
   },
@@ -1234,6 +1234,18 @@
     "status": "ac",
     "title": "二叉树的层序遍历",
     "titleSlug": "binary-tree-level-order-traversal"
+  },
+  {
+    "articleLive": 2,
+    "formTitle": "[103]二叉树的锯齿形层序遍历",
+    "frontendQuestionId": "103",
+    "leaf": true,
+    "level": 2,
+    "nodeType": "def",
+    "questionId": "103",
+    "status": "ac",
+    "title": "二叉树的锯齿形层序遍历",
+    "titleSlug": "binary-tree-zigzag-level-order-traversal"
   },
   {
     "articleLive": 2,
@@ -1819,7 +1831,7 @@
     "level": 2,
     "nodeType": "def",
     "questionId": "152",
-    "status": "",
+    "status": "ac",
     "title": "乘积最大子数组",
     "titleSlug": "maximum-product-subarray"
   },
@@ -4630,18 +4642,6 @@
     "status": "",
     "title": "字典序排数",
     "titleSlug": "lexicographical-numbers"
-  },
-  {
-    "articleLive": 2,
-    "formTitle": "[387]字符串中的第一个唯一字符",
-    "frontendQuestionId": "387",
-    "leaf": true,
-    "level": 1,
-    "nodeType": "def",
-    "questionId": "387",
-    "status": "",
-    "title": "字符串中的第一个唯一字符",
-    "titleSlug": "first-unique-character-in-a-string"
   },
   {
     "articleLive": 2,
@@ -20827,7 +20827,7 @@
     "level": 2,
     "nodeType": "def",
     "questionId": "100284",
-    "status": "",
+    "status": "ac",
     "title": "剪绳子",
     "titleSlug": "jian-sheng-zi-lcof"
   },
