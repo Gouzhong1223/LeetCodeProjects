@@ -1,15 +1,15 @@
 [
   {
     "articleLive": 2,
-    "formTitle": "[387]字符串中的第一个唯一字符",
-    "frontendQuestionId": "387",
+    "formTitle": "[135]分发糖果",
+    "frontendQuestionId": "135",
     "leaf": true,
-    "level": 1,
+    "level": 3,
     "nodeType": "def",
-    "questionId": "387",
+    "questionId": "135",
     "status": "",
-    "title": "字符串中的第一个唯一字符",
-    "titleSlug": "first-unique-character-in-a-string"
+    "title": "分发糖果",
+    "titleSlug": "candy"
   },
   {
     "articleLive": 2,
@@ -955,7 +955,7 @@
     "level": 2,
     "nodeType": "def",
     "questionId": "79",
-    "status": "notac",
+    "status": "ac",
     "title": "单词搜索",
     "titleSlug": "word-search"
   },
@@ -1015,7 +1015,7 @@
     "level": 3,
     "nodeType": "def",
     "questionId": "84",
-    "status": "",
+    "status": "ac",
     "title": "柱状图中最大的矩形",
     "titleSlug": "largest-rectangle-in-histogram"
   },
@@ -1027,7 +1027,7 @@
     "level": 3,
     "nodeType": "def",
     "questionId": "85",
-    "status": "",
+    "status": "ac",
     "title": "最大矩形",
     "titleSlug": "maximal-rectangle"
   },
@@ -1621,18 +1621,6 @@
   },
   {
     "articleLive": 2,
-    "formTitle": "[135]分发糖果",
-    "frontendQuestionId": "135",
-    "leaf": true,
-    "level": 3,
-    "nodeType": "def",
-    "questionId": "135",
-    "status": "",
-    "title": "分发糖果",
-    "titleSlug": "candy"
-  },
-  {
-    "articleLive": 2,
     "formTitle": "[136]只出现一次的数字",
     "frontendQuestionId": "136",
     "leaf": true,
@@ -1675,7 +1663,7 @@
     "level": 2,
     "nodeType": "def",
     "questionId": "139",
-    "status": "",
+    "status": "ac",
     "title": "单词拆分",
     "titleSlug": "word-break"
   },
@@ -4642,6 +4630,18 @@
     "status": "",
     "title": "字典序排数",
     "titleSlug": "lexicographical-numbers"
+  },
+  {
+    "articleLive": 2,
+    "formTitle": "[387]字符串中的第一个唯一字符",
+    "frontendQuestionId": "387",
+    "leaf": true,
+    "level": 1,
+    "nodeType": "def",
+    "questionId": "387",
+    "status": "ac",
+    "title": "字符串中的第一个唯一字符",
+    "titleSlug": "first-unique-character-in-a-string"
   },
   {
     "articleLive": 2,
@@ -10507,7 +10507,7 @@
     "level": 1,
     "nodeType": "def",
     "questionId": "908",
-    "status": "",
+    "status": "ac",
     "title": "链表的中间结点",
     "titleSlug": "middle-of-the-linked-list"
   },
