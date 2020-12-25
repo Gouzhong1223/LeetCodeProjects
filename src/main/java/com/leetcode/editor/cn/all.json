@@ -7,7 +7,7 @@
     "level": 1,
     "nodeType": "def",
     "questionId": "455",
-    "status": "",
+    "status": "ac",
     "title": "分发饼干",
     "titleSlug": "assign-cookies"
   },
@@ -4084,7 +4084,7 @@
     "formTitle": "[340]至多包含 K 个不同字符的最长子串",
     "frontendQuestionId": "340",
     "leaf": true,
-    "level": 3,
+    "level": 2,
     "nodeType": "def",
     "questionId": "340",
     "status": "lock",
@@ -13375,7 +13375,7 @@
     "level": 2,
     "nodeType": "def",
     "questionId": "1187",
-    "status": "",
+    "status": "ac",
     "title": "交替打印FooBar",
     "titleSlug": "print-foobar-alternately"
   },
@@ -20362,6 +20362,18 @@
     "status": "",
     "title": "检查边长度限制的路径是否存在",
     "titleSlug": "checking-existence-of-edge-length-limited-paths"
+  },
+  {
+    "articleLive": 2,
+    "formTitle": "[1698]Number of Distinct Substrings in a String",
+    "frontendQuestionId": "1698",
+    "leaf": true,
+    "level": 3,
+    "nodeType": "def",
+    "questionId": "1838",
+    "status": "lock",
+    "title": "Number of Distinct Substrings in a String",
+    "titleSlug": "number-of-distinct-substrings-in-a-string"
   },
   {
     "articleLive": 2,
