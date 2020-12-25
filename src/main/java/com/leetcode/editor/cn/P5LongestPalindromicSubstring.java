@@ -24,26 +24,33 @@ public class P5LongestPalindromicSubstring {
             if (length < 2) {
                 return s;
             }
-            int[][] dp = new int[length][length];
+            boolean[][] dp = new boolean[length][length];
             for (int i = 0; i < length; i++) {
-                // 初始化状态
-                dp[i][i] = 1;
+                dp[i][i] = true;
             }
-            int maxStart = 0;
-            int maxEnd = 0;
-            int maxLength = 1;
-            for (int i = length - 2; i >= 0; i--) {
-                for (int j = i + 1; j < length; j++) {
-                    if (s.charAt(i) == s.charAt(j)) {
-                        dp[i][j] = dp[i + 1][j - 1] + 2;
-                        maxStart = i;
-                        maxEnd = j;
+
+            int maxlength = 1;
+            int begin = 0;
+            char[] chars = s.toCharArray();
+            for (int j = 1; j < length; j++) {
+                for (int i = 0; i < j; i++) {
+                    if (chars[i] != chars[j]) {
+                        dp[i][j] = false;
                     } else {
-                        dp[i][j] = Math.max(dp[i + 1][j], dp[i][j - 1]);
+                        if (j - i < 3) {
+                            dp[i][j] = true;
+                        } else {
+                            dp[i][j] = dp[i + 1][j - 1];
+                        }
+                    }
+                    if (dp[i][j] && j - i + 1 > maxlength) {
+                        maxlength = j - i + 1;
+                        begin = i;
                     }
                 }
             }
-            return s.substring(maxStart, maxEnd + 1);
+            return s.substring(begin, begin + maxlength);
+
 
 //            int maxLen = 1;
 //            int start = 0;
