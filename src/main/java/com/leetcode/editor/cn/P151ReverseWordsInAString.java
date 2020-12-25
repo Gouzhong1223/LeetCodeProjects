@@ -80,7 +80,6 @@ public class P151ReverseWordsInAString {
             List<String> wordList = Arrays.asList(s.split("\\s+"));
             Collections.reverse(wordList);
             return String.join(" ", wordList);
-
         }
     }
 //leetcode submit region end(Prohibit modification and deletion)
