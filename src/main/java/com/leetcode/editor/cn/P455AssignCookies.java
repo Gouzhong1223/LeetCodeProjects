@@ -32,7 +32,7 @@ package com.leetcode.editor.cn;
 // 提示：
 //
 //
-// 1 <= g.length <= 3 * 104
+// 1 <= g.length <= 3 * 104foo
 // 0 <= s.length <= 3 * 104
 // 1 <= g[i], s[j] <= 231 - 1
 //
