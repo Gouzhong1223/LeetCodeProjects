@@ -29,25 +29,15 @@ public class P404SumOfLeftLeaves {
      * }
      */
     class Solution {
-
-        int res = 0;
-
         public int sumOfLeftLeaves(TreeNode root) {
-            helper(root);
-            return res;
-        }
-
-        public void helper(TreeNode root) {
             if (root == null) {
-                return;
+                return 0;
             }
-            if (root.left != null || root.right != null) {
-                if (root.left.left == null && root.left.right == null) {
-                    res += root.left.val;
-                }
-                helper(root.left);
-                helper(root.right);
+            int res = 0;
+            if (root.left != null && root.left.left == null && root.left.right == null) {
+                res += root.left.val;
             }
+            return res + sumOfLeftLeaves(root.left) + sumOfLeftLeaves(root.right);
         }
     }
 //leetcode submit region end(Prohibit modification and deletion)
