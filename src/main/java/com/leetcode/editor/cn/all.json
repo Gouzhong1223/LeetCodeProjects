@@ -4843,7 +4843,7 @@
     "level": 1,
     "nodeType": "def",
     "questionId": "404",
-    "status": "notac",
+    "status": "ac",
     "title": "左叶子之和",
     "titleSlug": "sum-of-left-leaves"
   },
@@ -5239,7 +5239,7 @@
     "level": 2,
     "nodeType": "def",
     "questionId": "437",
-    "status": "",
+    "status": "ac",
     "title": "路径总和 III",
     "titleSlug": "path-sum-iii"
   },
@@ -6091,7 +6091,7 @@
     "level": 2,
     "nodeType": "def",
     "questionId": "508",
-    "status": "",
+    "status": "ac",
     "title": "出现次数最多的子树元素和",
     "titleSlug": "most-frequent-subtree-sum"
   },
@@ -7639,7 +7639,7 @@
     "level": 1,
     "nodeType": "def",
     "questionId": "637",
-    "status": "",
+    "status": "ac",
     "title": "二叉树的层平均值",
     "titleSlug": "average-of-levels-in-binary-tree"
   },
@@ -20755,7 +20755,7 @@
     "level": 2,
     "nodeType": "def",
     "questionId": "100283",
-    "status": "",
+    "status": "ac",
     "title": "重建二叉树",
     "titleSlug": "zhong-jian-er-cha-shu-lcof"
   },
@@ -20779,7 +20779,7 @@
     "level": 1,
     "nodeType": "def",
     "questionId": "100274",
-    "status": "",
+    "status": "ac",
     "title": "斐波那契数列",
     "titleSlug": "fei-bo-na-qi-shu-lie-lcof"
   },
@@ -20827,7 +20827,7 @@
     "level": 2,
     "nodeType": "def",
     "questionId": "100281",
-    "status": "",
+    "status": "ac",
     "title": "机器人的运动范围",
     "titleSlug": "ji-qi-ren-de-yun-dong-fan-wei-lcof"
   },
@@ -21055,7 +21055,7 @@
     "level": 2,
     "nodeType": "def",
     "questionId": "100311",
-    "status": "",
+    "status": "ac",
     "title": "从上到下打印二叉树",
     "titleSlug": "cong-shang-dao-xia-da-yin-er-cha-shu-lcof"
   },
