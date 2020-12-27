@@ -19,8 +19,11 @@ package com.leetcode.editor.cn;
 
 public class P343IntegerBreak {
     //leetcode submit region begin(Prohibit modification and deletion)
-    class Solution {
+    static class Solution {
         public int integerBreak(int n) {
+            if (n <= 3) {
+                return n - 1;
+            }
             int[] dp = new int[n + 1];
             for (int i = 2; i <= n; i++) {
                 for (int j = 1; j < i; j++) {
@@ -28,6 +31,12 @@ public class P343IntegerBreak {
                 }
             }
             return dp[n];
+        }
+
+        public static void main(String[] args) {
+            Solution solution = new Solution();
+            int i = solution.integerBreak(8);
+            System.out.println(i);
         }
     }
 //leetcode submit region end(Prohibit modification and deletion)
