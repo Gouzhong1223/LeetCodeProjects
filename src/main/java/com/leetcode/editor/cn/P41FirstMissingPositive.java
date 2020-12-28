@@ -33,24 +33,24 @@ public class P41FirstMissingPositive {
     //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
         public int firstMissingPositive(int[] nums) {
-            int len = nums.length;
-            for (int i = 0; i < len; i++) {
-                while (nums[i] > 0 && nums[i] <= len && nums[i] != i + 1 && nums[nums[i] - 1] != nums[i]) {
+            int length = nums.length;
+            for (int i = 0; i < length; i++) {
+                while (nums[i] > 0 && nums[i] <= length && nums[nums[i] - 1] != nums[i]) {
                     swap(nums, nums[i] - 1, i);
                 }
             }
-            for (int i = 0; i < len; i++) {
+            for (int i = 0; i < length; i++) {
                 if (nums[i] != i + 1) {
                     return i + 1;
                 }
             }
-            return len + 1;
+            return length + 1;
         }
 
-        public void swap(int[] nums, int index1, int index2) {
-            int temp = nums[index1];
-            nums[index1] = nums[index2];
-            nums[index2] = temp;
+        public void swap(int[] nums, int i, int j) {
+            int temp = nums[i];
+            nums[i] = nums[j];
+            nums[j] = temp;
         }
     }
 //leetcode submit region end(Prohibit modification and deletion)
