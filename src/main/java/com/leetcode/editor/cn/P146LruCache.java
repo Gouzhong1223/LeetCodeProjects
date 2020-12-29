@@ -53,123 +53,129 @@ package com.leetcode.editor.cn;
 // 最多调用 3 * 104 次 get 和 put
 //
 // Related Topics 设计
-// 👍 1028 👎 0
+// 👍 1072 👎 0
 
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 
 public class P146LruCache {
     //leetcode submit region begin(Prohibit modification and deletion)
     class LRUCache {
-
         int capacity;
-
-        private final List<Node> nodes = new ArrayList<>(capacity);
-        // key 对应的 value 是 nodes 里面 Node 的下标
-        HashMap<Integer, Integer> hashMap = new HashMap<>();
+        HashMap<Integer, Node> map;
+        DubboList list;
 
         public LRUCache(int capacity) {
             this.capacity = capacity;
+            map = new HashMap<>();
+            list = new DubboList();
         }
 
         public int get(int key) {
-            Integer index = hashMap.get(key);
-            if (index == null) {
+            if (!map.containsKey(key)) {
                 return -1;
             }
-            Node node = getNodeByIndex(index);
-            return node.val;
+            int value = map.get(key).value;
+            put(key, value);
+            return value;
         }
 
         public void put(int key, int value) {
-            if (hashMap.containsKey(key)) {
-                Integer index = hashMap.get(key);
-                Node record = new Node(key, value);
-                nodes.remove(index);
-                nodes.add(index, record);
+            Node node = new Node(key, value);
+            if (map.containsKey(key)) {
+                list.remove(map.get(key));
             } else {
-
+                if (capacity == list.getSize()) {
+                    Node last = list.removeLast();
+                    map.remove(last.key);
+                }
             }
+            list.addFirst(node);
+            map.put(key, node);
+        }
+    }
+
+    class DubboList {
+        Node prev;
+        Node tail;
+        int size;
+
+        public DubboList() {
+            prev = new Node();
+            tail = new Node();
+            prev.next = tail;
+            tail.prev = prev;
+            this.size = 0;
         }
 
-        public Node getNodeByIndex(int index) {
-            Node node = nodes.get(index);
-            nodes.remove(index);
-            nodes.add(0, node);
-            return node;
+        public void addFirst(Node x) {
+            Node oldHead = prev.next;
+            prev.next = x;
+            x.prev = prev;
+            oldHead.prev = x;
+            x.next = oldHead;
+            size++;
         }
+
+        public void removeFirst() {
+            Node oldHead = prev.next;
+            if (oldHead == tail) {
+                return;
+            }
+            Node headNext = oldHead.next;
+            prev.next = headNext;
+            headNext.prev = prev;
+            size--;
+        }
+
+        public void remove(Node x) {
+            Node xNext = x.next;
+            Node xPrev = x.prev;
+            xPrev.next = xNext;
+            xNext.prev = xPrev;
+            size--;
+        }
+
+        public Node removeLast() {
+            if (tail.prev == prev) {
+                return null;
+            }
+            Node lastNode = tail.prev;
+            Node oldPrev = lastNode.prev;
+            oldPrev.next = tail;
+            tail.prev = oldPrev;
+            size--;
+            return lastNode;
+        }
+
+        public int getSize() {
+            return size;
+        }
+
     }
 
     class Node {
 
         int key;
-        int val;
-        Node next, prev;
+        int value;
+        Node prev;
+        Node next;
 
-        public Node(int key, int val) {
+        public Node() {
+        }
+
+        public Node(int key, int value) {
             this.key = key;
-            this.val = val;
+            this.value = value;
+        }
+
+        public Node(int key, int value, Node prev, Node next) {
+            this.key = key;
+            this.value = value;
+            this.prev = prev;
+            this.next = next;
         }
     }
 
-    class DubbleLinkList {
-        // 头尾虚节点
-        private Node head, tail;
-        // 链表元素数
-        private int size;
-
-        public DubbleLinkList() {
-            head = new Node(0, 0);
-            tail = new Node(0, 0);
-            head.next = tail;
-            tail.prev = head;
-            size = 0;
-        }
-
-        /**
-         * 在链表最后添加一个节点
-         *
-         * @param node 被添加的节点
-         */
-        public void addLast(Node node) {
-            node.prev = tail.prev;
-            node.next = tail;
-            tail.prev.next = node;
-            tail.prev = node;
-            size++;
-        }
-
-        /**
-         * 在链表中删除指定节点
-         *
-         * @param node 被删除的节点
-         */
-        public void remove(Node node) {
-            node.prev.next = node.next;
-            node.next.prev = node.prev;
-            size--;
-        }
-
-        /**
-         * 获取链表头结点并将其移除链表
-         *
-         * @return 头结点
-         */
-        public Node removeFirst() {
-            if (head.next == tail) {
-                return null;
-            }
-            Node f = head.next;
-            remove(f);
-            return f;
-        }
-
-        public int size() {
-            return size;
-        }
-
-    }
 
 /**
  * Your LRUCache object will be instantiated and called as such:
