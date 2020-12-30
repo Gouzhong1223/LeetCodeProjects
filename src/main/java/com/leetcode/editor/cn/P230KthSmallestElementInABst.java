@@ -52,12 +52,10 @@ public class P230KthSmallestElementInABst {
     class Solution {
         int res = 0;
         int rank = 0;
-
         public int kthSmallest(TreeNode root, int k) {
             inOrder(root, k);
             return res;
         }
-
         public void inOrder(TreeNode root, int k) {
             if (root == null) {
                 return;

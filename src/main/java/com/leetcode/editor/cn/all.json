@@ -1,15 +1,15 @@
 [
   {
     "articleLive": 2,
-    "formTitle": "[188]买卖股票的最佳时机 IV",
-    "frontendQuestionId": "188",
+    "formTitle": "[330]按要求补齐数组",
+    "frontendQuestionId": "330",
     "leaf": true,
     "level": 3,
     "nodeType": "def",
-    "questionId": "188",
-    "status": "notac",
-    "title": "买卖股票的最佳时机 IV",
-    "titleSlug": "best-time-to-buy-and-sell-stock-iv"
+    "questionId": "330",
+    "status": "",
+    "title": "按要求补齐数组",
+    "titleSlug": "patching-array"
   },
   {
     "articleLive": 2,
@@ -1759,7 +1759,7 @@
     "level": 2,
     "nodeType": "def",
     "questionId": "146",
-    "status": "",
+    "status": "ac",
     "title": "LRU 缓存机制",
     "titleSlug": "lru-cache"
   },
@@ -2254,6 +2254,18 @@
     "status": "",
     "title": "重复的DNA序列",
     "titleSlug": "repeated-dna-sequences"
+  },
+  {
+    "articleLive": 2,
+    "formTitle": "[188]买卖股票的最佳时机 IV",
+    "frontendQuestionId": "188",
+    "leaf": true,
+    "level": 3,
+    "nodeType": "def",
+    "questionId": "188",
+    "status": "notac",
+    "title": "买卖股票的最佳时机 IV",
+    "titleSlug": "best-time-to-buy-and-sell-stock-iv"
   },
   {
     "articleLive": 2,
@@ -3946,18 +3958,6 @@
     "status": "",
     "title": "矩阵中的最长递增路径",
     "titleSlug": "longest-increasing-path-in-a-matrix"
-  },
-  {
-    "articleLive": 2,
-    "formTitle": "[330]按要求补齐数组",
-    "frontendQuestionId": "330",
-    "leaf": true,
-    "level": 3,
-    "nodeType": "def",
-    "questionId": "330",
-    "status": "",
-    "title": "按要求补齐数组",
-    "titleSlug": "patching-array"
   },
   {
     "articleLive": 2,
@@ -7717,14 +7717,14 @@
   },
   {
     "articleLive": 2,
-    "formTitle": "[644]最大平均子段和 II",
+    "formTitle": "[644]子数组最大平均数 II",
     "frontendQuestionId": "644",
     "leaf": true,
     "level": 3,
     "nodeType": "def",
     "questionId": "644",
     "status": "",
-    "title": "最大平均子段和 II",
+    "title": "子数组最大平均数 II",
     "titleSlug": "maximum-average-subarray-ii"
   },
   {
