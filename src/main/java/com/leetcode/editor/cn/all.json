@@ -1,15 +1,15 @@
 [
   {
     "articleLive": 2,
-    "formTitle": "[330]按要求补齐数组",
-    "frontendQuestionId": "330",
+    "formTitle": "[435]无重叠区间",
+    "frontendQuestionId": "435",
     "leaf": true,
-    "level": 3,
+    "level": 2,
     "nodeType": "def",
-    "questionId": "330",
+    "questionId": "435",
     "status": "",
-    "title": "按要求补齐数组",
-    "titleSlug": "patching-array"
+    "title": "无重叠区间",
+    "titleSlug": "non-overlapping-intervals"
   },
   {
     "articleLive": 2,
@@ -3961,6 +3961,18 @@
   },
   {
     "articleLive": 2,
+    "formTitle": "[330]按要求补齐数组",
+    "frontendQuestionId": "330",
+    "leaf": true,
+    "level": 3,
+    "nodeType": "def",
+    "questionId": "330",
+    "status": "",
+    "title": "按要求补齐数组",
+    "titleSlug": "patching-array"
+  },
+  {
+    "articleLive": 2,
     "formTitle": "[331]验证二叉树的前序序列化",
     "frontendQuestionId": "331",
     "leaf": true,
@@ -5206,18 +5218,6 @@
     "status": "",
     "title": "字符串中的单词数",
     "titleSlug": "number-of-segments-in-a-string"
-  },
-  {
-    "articleLive": 2,
-    "formTitle": "[435]无重叠区间",
-    "frontendQuestionId": "435",
-    "leaf": true,
-    "level": 2,
-    "nodeType": "def",
-    "questionId": "435",
-    "status": "",
-    "title": "无重叠区间",
-    "titleSlug": "non-overlapping-intervals"
   },
   {
     "articleLive": 2,
@@ -6553,15 +6553,15 @@
   },
   {
     "articleLive": 2,
-    "formTitle": "[547]朋友圈",
+    "formTitle": "[547]省份数量",
     "frontendQuestionId": "547",
     "leaf": true,
     "level": 2,
     "nodeType": "def",
     "questionId": "547",
     "status": "notac",
-    "title": "朋友圈",
-    "titleSlug": "friend-circles"
+    "title": "省份数量",
+    "titleSlug": "number-of-provinces"
   },
   {
     "articleLive": 2,
@@ -20365,14 +20365,14 @@
   },
   {
     "articleLive": 2,
-    "formTitle": "[1698]Number of Distinct Substrings in a String",
+    "formTitle": "[1698]字符串的不同子字符串个数",
     "frontendQuestionId": "1698",
     "leaf": true,
     "level": 2,
     "nodeType": "def",
     "questionId": "1838",
     "status": "",
-    "title": "Number of Distinct Substrings in a String",
+    "title": "字符串的不同子字符串个数",
     "titleSlug": "number-of-distinct-substrings-in-a-string"
   },
   {

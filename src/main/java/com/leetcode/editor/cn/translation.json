@@ -2003,7 +2003,7 @@
       },
       {
         "questionId": "547",
-        "title": "\u670b\u53cb\u5708",
+        "title": "\u7701\u4efd\u6570\u91cf",
         "__typename": "AppliedTranslationNode"
       },
       {
@@ -10399,6 +10399,11 @@
       {
         "questionId": "1804",
         "title": "\u4fee\u6539\u540e\u7684\u6700\u5927\u4e8c\u8fdb\u5236\u5b57\u7b26\u4e32",
+        "__typename": "AppliedTranslationNode"
+      },
+      {
+        "questionId": "1838",
+        "title": "\u5b57\u7b26\u4e32\u7684\u4e0d\u540c\u5b50\u5b57\u7b26\u4e32\u4e2a\u6570",
         "__typename": "AppliedTranslationNode"
       }
     ]
