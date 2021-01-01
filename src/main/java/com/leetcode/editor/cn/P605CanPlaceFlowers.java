@@ -32,7 +32,16 @@ public class P605CanPlaceFlowers {
     //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
         public boolean canPlaceFlowers(int[] flowerbed, int n) {
-            return true;
+            for (int i = 0; i < flowerbed.length; i += 2) {
+                if (flowerbed[i] == 0) {
+                    if (i == flowerbed.length - 1 || flowerbed[i + 1] == 0) {
+                        n--;
+                    } else {
+                        i++;
+                    }
+                }
+            }
+            return n <= 0;
         }
     }
 //leetcode submit region end(Prohibit modification and deletion)
