@@ -7,7 +7,7 @@
     "level": 3,
     "nodeType": "def",
     "questionId": "239",
-    "status": "",
+    "status": "ac",
     "title": "滑动窗口最大值",
     "titleSlug": "sliding-window-maximum"
   },
@@ -2503,7 +2503,7 @@
     "level": 2,
     "nodeType": "def",
     "questionId": "208",
-    "status": "",
+    "status": "ac",
     "title": "实现 Trie (前缀树)",
     "titleSlug": "implement-trie-prefix-tree"
   },
