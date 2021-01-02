@@ -1,15 +1,15 @@
 [
   {
     "articleLive": 2,
-    "formTitle": "[605]种花问题",
-    "frontendQuestionId": "605",
+    "formTitle": "[239]滑动窗口最大值",
+    "frontendQuestionId": "239",
     "leaf": true,
-    "level": 1,
+    "level": 3,
     "nodeType": "def",
-    "questionId": "605",
+    "questionId": "239",
     "status": "",
-    "title": "种花问题",
-    "titleSlug": "can-place-flowers"
+    "title": "滑动窗口最大值",
+    "titleSlug": "sliding-window-maximum"
   },
   {
     "articleLive": 2,
@@ -1063,7 +1063,7 @@
     "level": 1,
     "nodeType": "def",
     "questionId": "88",
-    "status": "",
+    "status": "ac",
     "title": "合并两个有序数组",
     "titleSlug": "merge-sorted-array"
   },
@@ -2866,18 +2866,6 @@
     "status": "",
     "title": "除自身以外数组的乘积",
     "titleSlug": "product-of-array-except-self"
-  },
-  {
-    "articleLive": 2,
-    "formTitle": "[239]滑动窗口最大值",
-    "frontendQuestionId": "239",
-    "leaf": true,
-    "level": 3,
-    "nodeType": "def",
-    "questionId": "239",
-    "status": "",
-    "title": "滑动窗口最大值",
-    "titleSlug": "sliding-window-maximum"
   },
   {
     "articleLive": 2,
@@ -7258,6 +7246,18 @@
     "status": "",
     "title": "迭代压缩字符串",
     "titleSlug": "design-compressed-string-iterator"
+  },
+  {
+    "articleLive": 2,
+    "formTitle": "[605]种花问题",
+    "frontendQuestionId": "605",
+    "leaf": true,
+    "level": 1,
+    "nodeType": "def",
+    "questionId": "605",
+    "status": "ac",
+    "title": "种花问题",
+    "titleSlug": "can-place-flowers"
   },
   {
     "articleLive": 2,
