@@ -787,6 +787,14 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/leetcode/editor/cn/P238ProductOfArrayExceptSelf.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/src/main/java/com/leetcode/editor/cn/P238ProductOfArrayExceptSelf.java" />
+              <option name="questionId" value="238" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/main/java/com/leetcode/editor/cn/P239SlidingWindowMaximum.java">
           <value>
             <LeetcodeEditor>
