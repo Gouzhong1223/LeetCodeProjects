@@ -74,7 +74,33 @@ class Node {
 
     class Solution {
         public Node copyRandomList(Node head) {
-            return new Node(1);
+            if (head == null) {
+                return head;
+            }
+            Node p = head;
+            while (p != null) {
+                Node node = new Node(p.val);
+                node.next = p.next;
+                p.next = node;
+                p = node.next;
+            }
+            p = head;
+            while (p != null) {
+                if (p.random != null) {
+                    p.next.random = p.random.next;
+                }
+                p = p.next.next;
+            }
+            Node dummy = new Node(-1);
+            p = head;
+            Node cur = dummy;
+            while (p != null) {
+                cur.next = p.next;
+                cur = cur.next;
+                p.next = cur.next;
+                p = p.next;
+            }
+            return dummy.next;
         }
     }
 //leetcode submit region end(Prohibit modification and deletion)
