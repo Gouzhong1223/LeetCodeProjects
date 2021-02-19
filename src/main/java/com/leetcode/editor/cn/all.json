@@ -1,15 +1,15 @@
 [
   {
     "articleLive": 2,
-    "formTitle": "[992]K 个不同整数的子数组",
-    "frontendQuestionId": "992",
+    "formTitle": "[1004]最大连续1的个数 III",
+    "frontendQuestionId": "1004",
     "leaf": true,
-    "level": 3,
+    "level": 2,
     "nodeType": "def",
-    "questionId": "1034",
+    "questionId": "1046",
     "status": "",
-    "title": "K 个不同整数的子数组",
-    "titleSlug": "subarrays-with-k-different-integers"
+    "title": "最大连续1的个数 III",
+    "titleSlug": "max-consecutive-ones-iii"
   },
   {
     "articleLive": 2,
@@ -3355,7 +3355,7 @@
     "level": 2,
     "nodeType": "def",
     "questionId": "279",
-    "status": "",
+    "status": "ac",
     "title": "完全平方数",
     "titleSlug": "perfect-squares"
   },
@@ -4177,14 +4177,14 @@
   },
   {
     "articleLive": 2,
-    "formTitle": "[348]判定井字棋胜负",
+    "formTitle": "[348]设计井字棋",
     "frontendQuestionId": "348",
     "leaf": true,
     "level": 2,
     "nodeType": "def",
     "questionId": "348",
     "status": "lock",
-    "title": "判定井字棋胜负",
+    "title": "设计井字棋",
     "titleSlug": "design-tic-tac-toe"
   },
   {
@@ -5821,14 +5821,14 @@
   },
   {
     "articleLive": 2,
-    "formTitle": "[485]最大连续1的个数",
+    "formTitle": "[485]最大连续 1 的个数",
     "frontendQuestionId": "485",
     "leaf": true,
     "level": 1,
     "nodeType": "def",
     "questionId": "485",
     "status": "",
-    "title": "最大连续1的个数",
+    "title": "最大连续 1 的个数",
     "titleSlug": "max-consecutive-ones"
   },
   {
@@ -7669,14 +7669,14 @@
   },
   {
     "articleLive": 2,
-    "formTitle": "[639]解码方法 2",
+    "formTitle": "[639]解码方法 II",
     "frontendQuestionId": "639",
     "leaf": true,
     "level": 3,
     "nodeType": "def",
     "questionId": "639",
     "status": "",
-    "title": "解码方法 2",
+    "title": "解码方法 II",
     "titleSlug": "decode-ways-ii"
   },
   {
@@ -7993,14 +7993,14 @@
   },
   {
     "articleLive": 2,
-    "formTitle": "[666]路径和 IV",
+    "formTitle": "[666]路径总和 IV",
     "frontendQuestionId": "666",
     "leaf": true,
     "level": 2,
     "nodeType": "def",
     "questionId": "666",
     "status": "lock",
-    "title": "路径和 IV",
+    "title": "路径总和 IV",
     "titleSlug": "path-sum-iv"
   },
   {
@@ -11905,6 +11905,18 @@
   },
   {
     "articleLive": 2,
+    "formTitle": "[992]K 个不同整数的子数组",
+    "frontendQuestionId": "992",
+    "leaf": true,
+    "level": 3,
+    "nodeType": "def",
+    "questionId": "1034",
+    "status": "",
+    "title": "K 个不同整数的子数组",
+    "titleSlug": "subarrays-with-k-different-integers"
+  },
+  {
+    "articleLive": 2,
     "formTitle": "[993]二叉树的堂兄弟节点",
     "frontendQuestionId": "993",
     "leaf": true,
@@ -12034,18 +12046,6 @@
     "status": "",
     "title": "检查替换后的词是否有效",
     "titleSlug": "check-if-word-is-valid-after-substitutions"
-  },
-  {
-    "articleLive": 2,
-    "formTitle": "[1004]最大连续1的个数 III",
-    "frontendQuestionId": "1004",
-    "leaf": true,
-    "level": 2,
-    "nodeType": "def",
-    "questionId": "1046",
-    "status": "",
-    "title": "最大连续1的个数 III",
-    "titleSlug": "max-consecutive-ones-iii"
   },
   {
     "articleLive": 2,
@@ -21058,6 +21058,90 @@
     "status": "",
     "title": "最接近目标值的子序列和",
     "titleSlug": "closest-subsequence-sum"
+  },
+  {
+    "articleLive": 2,
+    "formTitle": "[1756]Design Most Recently Used Queue",
+    "frontendQuestionId": "1756",
+    "leaf": true,
+    "level": 2,
+    "nodeType": "def",
+    "questionId": "1903",
+    "status": "lock",
+    "title": "Design Most Recently Used Queue",
+    "titleSlug": "design-most-recently-used-queue"
+  },
+  {
+    "articleLive": 2,
+    "formTitle": "[1757]Recyclable and Low Fat Products",
+    "frontendQuestionId": "1757",
+    "leaf": true,
+    "level": 1,
+    "nodeType": "def",
+    "questionId": "1908",
+    "status": "lock",
+    "title": "Recyclable and Low Fat Products",
+    "titleSlug": "recyclable-and-low-fat-products"
+  },
+  {
+    "articleLive": 2,
+    "formTitle": "[1758]生成交替二进制字符串的最少操作数",
+    "frontendQuestionId": "1758",
+    "leaf": true,
+    "level": 1,
+    "nodeType": "def",
+    "questionId": "1884",
+    "status": "",
+    "title": "生成交替二进制字符串的最少操作数",
+    "titleSlug": "minimum-changes-to-make-alternating-binary-string"
+  },
+  {
+    "articleLive": 2,
+    "formTitle": "[1759]统计同构子字符串的数目",
+    "frontendQuestionId": "1759",
+    "leaf": true,
+    "level": 2,
+    "nodeType": "def",
+    "questionId": "1885",
+    "status": "",
+    "title": "统计同构子字符串的数目",
+    "titleSlug": "count-number-of-homogenous-substrings"
+  },
+  {
+    "articleLive": 2,
+    "formTitle": "[1760]袋子里最少数目的球",
+    "frontendQuestionId": "1760",
+    "leaf": true,
+    "level": 2,
+    "nodeType": "def",
+    "questionId": "1886",
+    "status": "",
+    "title": "袋子里最少数目的球",
+    "titleSlug": "minimum-limit-of-balls-in-a-bag"
+  },
+  {
+    "articleLive": 2,
+    "formTitle": "[1761]一个图中连通三元组的最小度数",
+    "frontendQuestionId": "1761",
+    "leaf": true,
+    "level": 3,
+    "nodeType": "def",
+    "questionId": "1887",
+    "status": "",
+    "title": "一个图中连通三元组的最小度数",
+    "titleSlug": "minimum-degree-of-a-connected-trio-in-a-graph"
+  },
+  {
+    "articleLive": 2,
+    "formTitle": "[1762]Buildings With an Ocean View",
+    "frontendQuestionId": "1762",
+    "leaf": true,
+    "level": 2,
+    "nodeType": "def",
+    "questionId": "1909",
+    "status": "lock",
+    "title": "Buildings With an Ocean View",
+    "titleSlug": "buildings-with-an-ocean-view"
   },
   {
     "articleLive": 2,
