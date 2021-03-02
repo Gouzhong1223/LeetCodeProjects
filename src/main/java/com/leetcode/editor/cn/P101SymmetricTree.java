@@ -67,10 +67,6 @@ public class P101SymmetricTree {
                     isMirrer(left.right, right.left);
         }
 
-        public static void main(String[] args) {
-
-        }
-
 
     }
 //leetcode submit region end(Prohibit modification and deletion)
