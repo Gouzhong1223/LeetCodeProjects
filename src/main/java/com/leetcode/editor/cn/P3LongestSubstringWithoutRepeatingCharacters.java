@@ -64,6 +64,18 @@ public class P3LongestSubstringWithoutRepeatingCharacters {
 //                max = Math.max(max, i - left + 1);
 //            }
 
+//            HashMap<Character, Integer> hashMap = new HashMap<>();
+//            int left = 0;
+//            int max = 0;
+//            for (int i = 0; i < s.length(); i++) {
+//                if (hashMap.containsKey(s.charAt(i))) {
+//                    left = Math.max(left, hashMap.get(s.charAt(i)) + 1);
+//                }
+//                hashMap.put(s.charAt(i), i);
+//                max = Math.max(max, i - left + 1);
+//            }
+//            return max;
+
             HashMap<Character, Integer> hashMap = new HashMap<>();
             int left = 0;
             int max = 0;
