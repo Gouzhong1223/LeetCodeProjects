@@ -43,11 +43,27 @@ package com.leetcode.editor.cn;
 // Related Topics 排序
 // 👍 438 👎 0
 
+
+import java.util.Arrays;
+
 public class P179LargestNumber {
     //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
         public String largestNumber(int[] nums) {
-            return null;
+            String[] strings = new String[nums.length];
+            for (int i = 0; i < nums.length; i++) {
+                strings[i] = String.valueOf(nums[i]);
+            }
+            Arrays.sort(strings, (x, y) -> (y + x).compareTo(x + y));
+            StringBuilder builder = new StringBuilder();
+            for (String s : strings) {
+                builder.append(s);
+            }
+            String res = builder.toString();
+            if (res.charAt(0) == '0') {
+                return "0";
+            }
+            return res;
         }
     }
 //leetcode submit region end(Prohibit modification and deletion)

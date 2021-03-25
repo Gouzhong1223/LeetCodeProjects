@@ -1,15 +1,15 @@
 [
   {
     "articleLive": 2,
-    "formTitle": "[227]基本计算器 II",
-    "frontendQuestionId": "227",
+    "formTitle": "[82]删除排序链表中的重复元素 II",
+    "frontendQuestionId": "82",
     "leaf": true,
     "level": 2,
     "nodeType": "def",
-    "questionId": "227",
-    "status": "",
-    "title": "基本计算器 II",
-    "titleSlug": "basic-calculator-ii"
+    "questionId": "82",
+    "status": "ac",
+    "title": "删除排序链表中的重复元素 II",
+    "titleSlug": "remove-duplicates-from-sorted-list-ii"
   },
   {
     "articleLive": 2,
@@ -313,14 +313,14 @@
   },
   {
     "articleLive": 2,
-    "formTitle": "[26]删除排序数组中的重复项",
+    "formTitle": "[26]删除有序数组中的重复项",
     "frontendQuestionId": "26",
     "leaf": true,
     "level": 1,
     "nodeType": "def",
     "questionId": "26",
     "status": "ac",
-    "title": "删除排序数组中的重复项",
+    "title": "删除有序数组中的重复项",
     "titleSlug": "remove-duplicates-from-sorted-array"
   },
   {
@@ -985,18 +985,6 @@
   },
   {
     "articleLive": 2,
-    "formTitle": "[82]删除排序链表中的重复元素 II",
-    "frontendQuestionId": "82",
-    "leaf": true,
-    "level": 2,
-    "nodeType": "def",
-    "questionId": "82",
-    "status": "ac",
-    "title": "删除排序链表中的重复元素 II",
-    "titleSlug": "remove-duplicates-from-sorted-list-ii"
-  },
-  {
-    "articleLive": 2,
     "formTitle": "[83]删除排序链表中的重复元素",
     "frontendQuestionId": "83",
     "leaf": true,
@@ -1168,7 +1156,7 @@
     "formTitle": "[97]交错字符串",
     "frontendQuestionId": "97",
     "leaf": true,
-    "level": 3,
+    "level": 2,
     "nodeType": "def",
     "questionId": "97",
     "status": "",
@@ -2722,6 +2710,18 @@
     "status": "ac",
     "title": "翻转二叉树",
     "titleSlug": "invert-binary-tree"
+  },
+  {
+    "articleLive": 2,
+    "formTitle": "[227]基本计算器 II",
+    "frontendQuestionId": "227",
+    "leaf": true,
+    "level": 2,
+    "nodeType": "def",
+    "questionId": "227",
+    "status": "",
+    "title": "基本计算器 II",
+    "titleSlug": "basic-calculator-ii"
   },
   {
     "articleLive": 2,
@@ -5461,14 +5461,14 @@
   },
   {
     "articleLive": 2,
-    "formTitle": "[456]132模式",
+    "formTitle": "[456]132 模式",
     "frontendQuestionId": "456",
     "leaf": true,
     "level": 2,
     "nodeType": "def",
     "questionId": "456",
     "status": "",
-    "title": "132模式",
+    "title": "132 模式",
     "titleSlug": "132-pattern"
   },
   {
@@ -21457,6 +21457,198 @@
   },
   {
     "articleLive": 2,
+    "formTitle": "[1789]Primary Department for Each Employee",
+    "frontendQuestionId": "1789",
+    "leaf": true,
+    "level": 1,
+    "nodeType": "def",
+    "questionId": "1942",
+    "status": "lock",
+    "title": "Primary Department for Each Employee",
+    "titleSlug": "primary-department-for-each-employee"
+  },
+  {
+    "articleLive": 2,
+    "formTitle": "[1790]仅执行一次字符串交换能否使两个字符串相等",
+    "frontendQuestionId": "1790",
+    "leaf": true,
+    "level": 1,
+    "nodeType": "def",
+    "questionId": "1915",
+    "status": "",
+    "title": "仅执行一次字符串交换能否使两个字符串相等",
+    "titleSlug": "check-if-one-string-swap-can-make-strings-equal"
+  },
+  {
+    "articleLive": 2,
+    "formTitle": "[1791]找出星型图的中心节点",
+    "frontendQuestionId": "1791",
+    "leaf": true,
+    "level": 2,
+    "nodeType": "def",
+    "questionId": "1916",
+    "status": "",
+    "title": "找出星型图的中心节点",
+    "titleSlug": "find-center-of-star-graph"
+  },
+  {
+    "articleLive": 2,
+    "formTitle": "[1792]最大平均通过率",
+    "frontendQuestionId": "1792",
+    "leaf": true,
+    "level": 2,
+    "nodeType": "def",
+    "questionId": "1917",
+    "status": "",
+    "title": "最大平均通过率",
+    "titleSlug": "maximum-average-pass-ratio"
+  },
+  {
+    "articleLive": 2,
+    "formTitle": "[1793]好子数组的最大分数",
+    "frontendQuestionId": "1793",
+    "leaf": true,
+    "level": 3,
+    "nodeType": "def",
+    "questionId": "1918",
+    "status": "",
+    "title": "好子数组的最大分数",
+    "titleSlug": "maximum-score-of-a-good-subarray"
+  },
+  {
+    "articleLive": 2,
+    "formTitle": "[1794]Count Pairs of Equal Substrings With Minimum Difference",
+    "frontendQuestionId": "1794",
+    "leaf": true,
+    "level": 2,
+    "nodeType": "def",
+    "questionId": "1943",
+    "status": "lock",
+    "title": "Count Pairs of Equal Substrings With Minimum Difference",
+    "titleSlug": "count-pairs-of-equal-substrings-with-minimum-difference"
+  },
+  {
+    "articleLive": 2,
+    "formTitle": "[1795]Rearrange Products Table",
+    "frontendQuestionId": "1795",
+    "leaf": true,
+    "level": 1,
+    "nodeType": "def",
+    "questionId": "1948",
+    "status": "lock",
+    "title": "Rearrange Products Table",
+    "titleSlug": "rearrange-products-table"
+  },
+  {
+    "articleLive": 2,
+    "formTitle": "[1796]字符串中第二大的数字",
+    "frontendQuestionId": "1796",
+    "leaf": true,
+    "level": 1,
+    "nodeType": "def",
+    "questionId": "1904",
+    "status": "",
+    "title": "字符串中第二大的数字",
+    "titleSlug": "second-largest-digit-in-a-string"
+  },
+  {
+    "articleLive": 2,
+    "formTitle": "[1797]设计一个验证系统",
+    "frontendQuestionId": "1797",
+    "leaf": true,
+    "level": 2,
+    "nodeType": "def",
+    "questionId": "1905",
+    "status": "",
+    "title": "设计一个验证系统",
+    "titleSlug": "design-authentication-manager"
+  },
+  {
+    "articleLive": 2,
+    "formTitle": "[1798]你能构造出连续值的最大数目",
+    "frontendQuestionId": "1798",
+    "leaf": true,
+    "level": 2,
+    "nodeType": "def",
+    "questionId": "1930",
+    "status": "",
+    "title": "你能构造出连续值的最大数目",
+    "titleSlug": "maximum-number-of-consecutive-values-you-can-make"
+  },
+  {
+    "articleLive": 2,
+    "formTitle": "[1799]N 次操作后的最大分数和",
+    "frontendQuestionId": "1799",
+    "leaf": true,
+    "level": 3,
+    "nodeType": "def",
+    "questionId": "1906",
+    "status": "",
+    "title": "N 次操作后的最大分数和",
+    "titleSlug": "maximize-score-after-n-operations"
+  },
+  {
+    "articleLive": 2,
+    "formTitle": "[1800]最大升序子数组和",
+    "frontendQuestionId": "1800",
+    "leaf": true,
+    "level": 1,
+    "nodeType": "def",
+    "questionId": "1927",
+    "status": "",
+    "title": "最大升序子数组和",
+    "titleSlug": "maximum-ascending-subarray-sum"
+  },
+  {
+    "articleLive": 2,
+    "formTitle": "[1801]积压订单中的订单总数",
+    "frontendQuestionId": "1801",
+    "leaf": true,
+    "level": 2,
+    "nodeType": "def",
+    "questionId": "1928",
+    "status": "",
+    "title": "积压订单中的订单总数",
+    "titleSlug": "number-of-orders-in-the-backlog"
+  },
+  {
+    "articleLive": 2,
+    "formTitle": "[1802]有界数组中指定下标处的最大值",
+    "frontendQuestionId": "1802",
+    "leaf": true,
+    "level": 2,
+    "nodeType": "def",
+    "questionId": "1929",
+    "status": "",
+    "title": "有界数组中指定下标处的最大值",
+    "titleSlug": "maximum-value-at-a-given-index-in-a-bounded-array"
+  },
+  {
+    "articleLive": 2,
+    "formTitle": "[1803]统计异或值在范围内的数对有多少",
+    "frontendQuestionId": "1803",
+    "leaf": true,
+    "level": 3,
+    "nodeType": "def",
+    "questionId": "1907",
+    "status": "",
+    "title": "统计异或值在范围内的数对有多少",
+    "titleSlug": "count-pairs-with-xor-in-a-range"
+  },
+  {
+    "articleLive": 2,
+    "formTitle": "[1804]Implement Trie II (Prefix Tree)",
+    "frontendQuestionId": "1804",
+    "leaf": true,
+    "level": 2,
+    "nodeType": "def",
+    "questionId": "1949",
+    "status": "lock",
+    "title": "Implement Trie II (Prefix Tree)",
+    "titleSlug": "implement-trie-ii-prefix-tree"
+  },
+  {
+    "articleLive": 2,
     "formTitle": "[LCP 01]猜数字",
     "frontendQuestionId": "LCP 01",
     "leaf": true,
@@ -22105,18 +22297,6 @@
   },
   {
     "articleLive": 2,
-    "formTitle": "[剑指 Offer 30]包含min函数的栈",
-    "frontendQuestionId": "剑指 Offer 30",
-    "leaf": true,
-    "level": 1,
-    "nodeType": "def",
-    "questionId": "100302",
-    "status": "ac",
-    "title": "包含min函数的栈",
-    "titleSlug": "bao-han-minhan-shu-de-zhan-lcof"
-  },
-  {
-    "articleLive": 2,
     "formTitle": "[剑指 Offer 31]栈的压入、弹出序列",
     "frontendQuestionId": "剑指 Offer 31",
     "leaf": true,
@@ -22303,7 +22483,7 @@
     "level": 2,
     "nodeType": "def",
     "questionId": "100323",
-    "status": "",
+    "status": "ac",
     "title": "把数组排成最小的数",
     "titleSlug": "ba-shu-zu-pai-cheng-zui-xiao-de-shu-lcof"
   },
@@ -23974,6 +24154,18 @@
     "status": "",
     "title": "稀疏相似度",
     "titleSlug": "sparse-similarity-lcci"
+  },
+  {
+    "articleLive": 2,
+    "formTitle": "[面试题30]包含min函数的栈",
+    "frontendQuestionId": "面试题30",
+    "leaf": true,
+    "level": 1,
+    "nodeType": "def",
+    "questionId": "100302",
+    "status": "ac",
+    "title": "包含min函数的栈",
+    "titleSlug": "bao-han-minhan-shu-de-zhan-lcof"
   },
   {
     "articleLive": 2,
