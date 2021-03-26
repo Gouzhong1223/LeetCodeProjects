@@ -60,6 +60,31 @@ public class QuickSort {
 
     }
 
+    public void sort(int[] nums, int low, int high) {
+        int i, j, p, temp;
+        if (low >= high) {
+            return;
+        }
+        p = nums[low];
+        i = low;
+        j = high;
+        while (i < j) {
+            while (nums[j] >= p && i < j) {
+                j--;
+            }
+            while (nums[i] <= p && i < j) {
+                i++;
+            }
+            int tmp = nums[i];
+            nums[i] = nums[j];
+            nums[j] = tmp;
+        }
+        nums[low] = nums[i];
+        nums[i] = p;
+        sort(nums, low, j - 1);
+        sort(nums, j + 1, high);
+    }
+
 
     public static void main(String[] args) {
 //        System.out.println(System.currentTimeMillis());
