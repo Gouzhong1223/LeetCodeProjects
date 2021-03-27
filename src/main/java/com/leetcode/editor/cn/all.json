@@ -1,15 +1,15 @@
 [
   {
     "articleLive": 2,
-    "formTitle": "[82]删除排序链表中的重复元素 II",
-    "frontendQuestionId": "82",
+    "formTitle": "[61]旋转链表",
+    "frontendQuestionId": "61",
     "leaf": true,
     "level": 2,
     "nodeType": "def",
-    "questionId": "82",
+    "questionId": "61",
     "status": "ac",
-    "title": "删除排序链表中的重复元素 II",
-    "titleSlug": "remove-duplicates-from-sorted-list-ii"
+    "title": "旋转链表",
+    "titleSlug": "rotate-list"
   },
   {
     "articleLive": 2,
@@ -571,7 +571,7 @@
     "level": 2,
     "nodeType": "def",
     "questionId": "47",
-    "status": "",
+    "status": "ac",
     "title": "全排列 II",
     "titleSlug": "permutations-ii"
   },
@@ -733,18 +733,6 @@
   },
   {
     "articleLive": 2,
-    "formTitle": "[61]旋转链表",
-    "frontendQuestionId": "61",
-    "leaf": true,
-    "level": 2,
-    "nodeType": "def",
-    "questionId": "61",
-    "status": "ac",
-    "title": "旋转链表",
-    "titleSlug": "rotate-list"
-  },
-  {
-    "articleLive": 2,
     "formTitle": "[62]不同路径",
     "frontendQuestionId": "62",
     "leaf": true,
@@ -859,7 +847,7 @@
     "level": 2,
     "nodeType": "def",
     "questionId": "71",
-    "status": "",
+    "status": "ac",
     "title": "简化路径",
     "titleSlug": "simplify-path"
   },
@@ -982,6 +970,18 @@
     "status": "",
     "title": "搜索旋转排序数组 II",
     "titleSlug": "search-in-rotated-sorted-array-ii"
+  },
+  {
+    "articleLive": 2,
+    "formTitle": "[82]删除排序链表中的重复元素 II",
+    "frontendQuestionId": "82",
+    "leaf": true,
+    "level": 2,
+    "nodeType": "def",
+    "questionId": "82",
+    "status": "ac",
+    "title": "删除排序链表中的重复元素 II",
+    "titleSlug": "remove-duplicates-from-sorted-list-ii"
   },
   {
     "articleLive": 2,
@@ -2143,7 +2143,7 @@
     "level": 2,
     "nodeType": "def",
     "questionId": "179",
-    "status": "",
+    "status": "ac",
     "title": "最大数",
     "titleSlug": "largest-number"
   },
@@ -5923,7 +5923,7 @@
     "level": 2,
     "nodeType": "def",
     "questionId": "494",
-    "status": "",
+    "status": "ac",
     "title": "目标和",
     "titleSlug": "target-sum"
   },
@@ -22363,7 +22363,7 @@
     "level": 2,
     "nodeType": "def",
     "questionId": "100300",
-    "status": "",
+    "status": "ac",
     "title": "复杂链表的复制",
     "titleSlug": "fu-za-lian-biao-de-fu-zhi-lcof"
   },
