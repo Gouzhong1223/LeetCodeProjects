@@ -1,15 +1,15 @@
 [
   {
     "articleLive": 2,
-    "formTitle": "[61]旋转链表",
-    "frontendQuestionId": "61",
+    "formTitle": "[173]二叉搜索树迭代器",
+    "frontendQuestionId": "173",
     "leaf": true,
     "level": 2,
     "nodeType": "def",
-    "questionId": "61",
-    "status": "ac",
-    "title": "旋转链表",
-    "titleSlug": "rotate-list"
+    "questionId": "173",
+    "status": "",
+    "title": "二叉搜索树迭代器",
+    "titleSlug": "binary-search-tree-iterator"
   },
   {
     "articleLive": 2,
@@ -730,6 +730,18 @@
     "status": "",
     "title": "排列序列",
     "titleSlug": "permutation-sequence"
+  },
+  {
+    "articleLive": 2,
+    "formTitle": "[61]旋转链表",
+    "frontendQuestionId": "61",
+    "leaf": true,
+    "level": 2,
+    "nodeType": "def",
+    "questionId": "61",
+    "status": "ac",
+    "title": "旋转链表",
+    "titleSlug": "rotate-list"
   },
   {
     "articleLive": 2,
@@ -2062,18 +2074,6 @@
     "status": "",
     "title": "阶乘后的零",
     "titleSlug": "factorial-trailing-zeroes"
-  },
-  {
-    "articleLive": 2,
-    "formTitle": "[173]二叉搜索树迭代器",
-    "frontendQuestionId": "173",
-    "leaf": true,
-    "level": 2,
-    "nodeType": "def",
-    "questionId": "173",
-    "status": "",
-    "title": "二叉搜索树迭代器",
-    "titleSlug": "binary-search-tree-iterator"
   },
   {
     "articleLive": 2,
@@ -21649,6 +21649,54 @@
   },
   {
     "articleLive": 2,
+    "formTitle": "[1806]还原排列的最少操作步数",
+    "frontendQuestionId": "1806",
+    "leaf": true,
+    "level": 2,
+    "nodeType": "def",
+    "questionId": "1935",
+    "status": "",
+    "title": "还原排列的最少操作步数",
+    "titleSlug": "minimum-number-of-operations-to-reinitialize-a-permutation"
+  },
+  {
+    "articleLive": 2,
+    "formTitle": "[5713]字符串中不同整数的数目",
+    "frontendQuestionId": "5713",
+    "leaf": true,
+    "level": 1,
+    "nodeType": "def",
+    "questionId": "1933",
+    "status": "",
+    "title": "字符串中不同整数的数目",
+    "titleSlug": "number-of-different-integers-in-a-string"
+  },
+  {
+    "articleLive": 2,
+    "formTitle": "[5714]替换字符串中的括号内容",
+    "frontendQuestionId": "5714",
+    "leaf": true,
+    "level": 2,
+    "nodeType": "def",
+    "questionId": "1934",
+    "status": "",
+    "title": "替换字符串中的括号内容",
+    "titleSlug": "evaluate-the-bracket-pairs-of-a-string"
+  },
+  {
+    "articleLive": 2,
+    "formTitle": "[5716]好因子的最大数目",
+    "frontendQuestionId": "5716",
+    "leaf": true,
+    "level": 3,
+    "nodeType": "def",
+    "questionId": "1936",
+    "status": "",
+    "title": "好因子的最大数目",
+    "titleSlug": "maximize-number-of-nice-divisors"
+  },
+  {
+    "articleLive": 2,
     "formTitle": "[LCP 01]猜数字",
     "frontendQuestionId": "LCP 01",
     "leaf": true,
@@ -22375,7 +22423,7 @@
     "level": 2,
     "nodeType": "def",
     "questionId": "100305",
-    "status": "",
+    "status": "ac",
     "title": "二叉搜索树与双向链表",
     "titleSlug": "er-cha-sou-suo-shu-yu-shuang-xiang-lian-biao-lcof"
   },
