@@ -1,15 +1,15 @@
 [
   {
     "articleLive": 2,
-    "formTitle": "[981]基于时间的键值存储",
-    "frontendQuestionId": "981",
+    "formTitle": "[274]H 指数",
+    "frontendQuestionId": "274",
     "leaf": true,
     "level": 2,
     "nodeType": "def",
-    "questionId": "1023",
+    "questionId": "274",
     "status": "",
-    "title": "基于时间的键值存储",
-    "titleSlug": "time-based-key-value-store"
+    "title": "H 指数",
+    "titleSlug": "h-index"
   },
   {
     "articleLive": 2,
@@ -3286,18 +3286,6 @@
     "status": "",
     "title": "整数转换英文表示",
     "titleSlug": "integer-to-english-words"
-  },
-  {
-    "articleLive": 2,
-    "formTitle": "[274]H 指数",
-    "frontendQuestionId": "274",
-    "leaf": true,
-    "level": 2,
-    "nodeType": "def",
-    "questionId": "274",
-    "status": "",
-    "title": "H 指数",
-    "titleSlug": "h-index"
   },
   {
     "articleLive": 2,
@@ -11770,6 +11758,18 @@
     "status": "",
     "title": "不同路径 III",
     "titleSlug": "unique-paths-iii"
+  },
+  {
+    "articleLive": 2,
+    "formTitle": "[981]基于时间的键值存储",
+    "frontendQuestionId": "981",
+    "leaf": true,
+    "level": 2,
+    "nodeType": "def",
+    "questionId": "1023",
+    "status": "ac",
+    "title": "基于时间的键值存储",
+    "titleSlug": "time-based-key-value-store"
   },
   {
     "articleLive": 2,
@@ -23086,6 +23086,102 @@
     "status": "lock",
     "title": "Erect the Fence II",
     "titleSlug": "erect-the-fence-ii"
+  },
+  {
+    "articleLive": 2,
+    "formTitle": "[5792]统计平方和三元组的数目",
+    "frontendQuestionId": "5792",
+    "leaf": true,
+    "level": 1,
+    "nodeType": "def",
+    "questionId": "2037",
+    "status": "",
+    "title": "统计平方和三元组的数目",
+    "titleSlug": "count-square-sum-triples"
+  },
+  {
+    "articleLive": 2,
+    "formTitle": "[5793]迷宫中离入口最近的出口",
+    "frontendQuestionId": "5793",
+    "leaf": true,
+    "level": 2,
+    "nodeType": "def",
+    "questionId": "2038",
+    "status": "",
+    "title": "迷宫中离入口最近的出口",
+    "titleSlug": "nearest-exit-from-entrance-in-maze"
+  },
+  {
+    "articleLive": 2,
+    "formTitle": "[5794]求和游戏",
+    "frontendQuestionId": "5794",
+    "leaf": true,
+    "level": 2,
+    "nodeType": "def",
+    "questionId": "2039",
+    "status": "",
+    "title": "求和游戏",
+    "titleSlug": "sum-game"
+  },
+  {
+    "articleLive": 2,
+    "formTitle": "[5795]规定时间内到达终点的最小花费",
+    "frontendQuestionId": "5795",
+    "leaf": true,
+    "level": 3,
+    "nodeType": "def",
+    "questionId": "2040",
+    "status": "",
+    "title": "规定时间内到达终点的最小花费",
+    "titleSlug": "minimum-cost-to-reach-destination-in-time"
+  },
+  {
+    "articleLive": 2,
+    "formTitle": "[5808]数组串联",
+    "frontendQuestionId": "5808",
+    "leaf": true,
+    "level": 1,
+    "nodeType": "def",
+    "questionId": "2058",
+    "status": "",
+    "title": "数组串联",
+    "titleSlug": "concatenation-of-array"
+  },
+  {
+    "articleLive": 2,
+    "formTitle": "[5809]长度为 3 的不同回文子序列",
+    "frontendQuestionId": "5809",
+    "leaf": true,
+    "level": 2,
+    "nodeType": "def",
+    "questionId": "2059",
+    "status": "",
+    "title": "长度为 3 的不同回文子序列",
+    "titleSlug": "unique-length-3-palindromic-subsequences"
+  },
+  {
+    "articleLive": 2,
+    "formTitle": "[5810]合并多棵二叉搜索树",
+    "frontendQuestionId": "5810",
+    "leaf": true,
+    "level": 3,
+    "nodeType": "def",
+    "questionId": "2060",
+    "status": "",
+    "title": "合并多棵二叉搜索树",
+    "titleSlug": "merge-bsts-to-create-single-bst"
+  },
+  {
+    "articleLive": 2,
+    "formTitle": "[5811]用三种不同颜色为网格涂色",
+    "frontendQuestionId": "5811",
+    "leaf": true,
+    "level": 3,
+    "nodeType": "def",
+    "questionId": "2061",
+    "status": "",
+    "title": "用三种不同颜色为网格涂色",
+    "titleSlug": "painting-a-grid-with-three-different-colors"
   },
   {
     "articleLive": 2,
