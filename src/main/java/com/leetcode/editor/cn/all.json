@@ -1,15 +1,15 @@
 [
   {
     "articleLive": 2,
-    "formTitle": "[274]H 指数",
-    "frontendQuestionId": "274",
+    "formTitle": "[275]H 指数 II",
+    "frontendQuestionId": "275",
     "leaf": true,
     "level": 2,
     "nodeType": "def",
-    "questionId": "274",
+    "questionId": "275",
     "status": "",
-    "title": "H 指数",
-    "titleSlug": "h-index"
+    "title": "H 指数 II",
+    "titleSlug": "h-index-ii"
   },
   {
     "articleLive": 2,
@@ -3289,15 +3289,15 @@
   },
   {
     "articleLive": 2,
-    "formTitle": "[275]H 指数 II",
-    "frontendQuestionId": "275",
+    "formTitle": "[274]H 指数",
+    "frontendQuestionId": "274",
     "leaf": true,
     "level": 2,
     "nodeType": "def",
-    "questionId": "275",
-    "status": "",
-    "title": "H 指数 II",
-    "titleSlug": "h-index-ii"
+    "questionId": "274",
+    "status": "ac",
+    "title": "H 指数",
+    "titleSlug": "h-index"
   },
   {
     "articleLive": 2,
@@ -23023,7 +23023,7 @@
     "level": 3,
     "nodeType": "def",
     "questionId": "2064",
-    "status": "",
+    "status": "lock",
     "title": "Leetcodify Similar Friends",
     "titleSlug": "leetcodify-similar-friends"
   },
@@ -23089,8 +23089,8 @@
   },
   {
     "articleLive": 2,
-    "formTitle": "[5792]统计平方和三元组的数目",
-    "frontendQuestionId": "5792",
+    "formTitle": "[1925]统计平方和三元组的数目",
+    "frontendQuestionId": "1925",
     "leaf": true,
     "level": 1,
     "nodeType": "def",
@@ -23101,8 +23101,8 @@
   },
   {
     "articleLive": 2,
-    "formTitle": "[5793]迷宫中离入口最近的出口",
-    "frontendQuestionId": "5793",
+    "formTitle": "[1926]迷宫中离入口最近的出口",
+    "frontendQuestionId": "1926",
     "leaf": true,
     "level": 2,
     "nodeType": "def",
@@ -23113,8 +23113,8 @@
   },
   {
     "articleLive": 2,
-    "formTitle": "[5794]求和游戏",
-    "frontendQuestionId": "5794",
+    "formTitle": "[1927]求和游戏",
+    "frontendQuestionId": "1927",
     "leaf": true,
     "level": 2,
     "nodeType": "def",
@@ -23125,8 +23125,8 @@
   },
   {
     "articleLive": 2,
-    "formTitle": "[5795]规定时间内到达终点的最小花费",
-    "frontendQuestionId": "5795",
+    "formTitle": "[1928]规定时间内到达终点的最小花费",
+    "frontendQuestionId": "1928",
     "leaf": true,
     "level": 3,
     "nodeType": "def",
@@ -23137,8 +23137,8 @@
   },
   {
     "articleLive": 2,
-    "formTitle": "[5808]数组串联",
-    "frontendQuestionId": "5808",
+    "formTitle": "[1929]数组串联",
+    "frontendQuestionId": "1929",
     "leaf": true,
     "level": 1,
     "nodeType": "def",
@@ -23149,8 +23149,8 @@
   },
   {
     "articleLive": 2,
-    "formTitle": "[5809]长度为 3 的不同回文子序列",
-    "frontendQuestionId": "5809",
+    "formTitle": "[1930]长度为 3 的不同回文子序列",
+    "frontendQuestionId": "1930",
     "leaf": true,
     "level": 2,
     "nodeType": "def",
@@ -23161,20 +23161,8 @@
   },
   {
     "articleLive": 2,
-    "formTitle": "[5810]合并多棵二叉搜索树",
-    "frontendQuestionId": "5810",
-    "leaf": true,
-    "level": 3,
-    "nodeType": "def",
-    "questionId": "2060",
-    "status": "",
-    "title": "合并多棵二叉搜索树",
-    "titleSlug": "merge-bsts-to-create-single-bst"
-  },
-  {
-    "articleLive": 2,
-    "formTitle": "[5811]用三种不同颜色为网格涂色",
-    "frontendQuestionId": "5811",
+    "formTitle": "[1931]用三种不同颜色为网格涂色",
+    "frontendQuestionId": "1931",
     "leaf": true,
     "level": 3,
     "nodeType": "def",
@@ -23182,6 +23170,18 @@
     "status": "",
     "title": "用三种不同颜色为网格涂色",
     "titleSlug": "painting-a-grid-with-three-different-colors"
+  },
+  {
+    "articleLive": 2,
+    "formTitle": "[1932]合并多棵二叉搜索树",
+    "frontendQuestionId": "1932",
+    "leaf": true,
+    "level": 3,
+    "nodeType": "def",
+    "questionId": "2060",
+    "status": "",
+    "title": "合并多棵二叉搜索树",
+    "titleSlug": "merge-bsts-to-create-single-bst"
   },
   {
     "articleLive": 2,
