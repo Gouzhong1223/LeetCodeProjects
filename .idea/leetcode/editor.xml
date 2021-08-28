@@ -435,6 +435,15 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/leetcode/editor/cn/P1480RunningSumOf1dArray.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/main/java/com/leetcode/editor/cn/doc/content/P1480RunningSumOf1dArray.md" />
+              <option name="path" value="$PROJECT_DIR$/src/main/java/com/leetcode/editor/cn/P1480RunningSumOf1dArray.java" />
+              <option name="questionId" value="1480" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/main/java/com/leetcode/editor/cn/P148SortList.java">
           <value>
             <LeetcodeEditor>
@@ -1488,6 +1497,14 @@
             <LeetcodeEditor>
               <option name="path" value="$PROJECT_DIR$/src/main/java/com/leetcode/editor/cn/P56MergeIntervals.java" />
               <option name="questionId" value="56" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/leetcode/editor/cn/P576OutOfBoundaryPaths.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/src/main/java/com/leetcode/editor/cn/P576OutOfBoundaryPaths.java" />
+              <option name="questionId" value="576" />
             </LeetcodeEditor>
           </value>
         </entry>
