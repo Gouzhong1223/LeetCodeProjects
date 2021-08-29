@@ -52,40 +52,29 @@ package com.leetcode.editor.cn;
 // Related Topics 数组 二分查找 分治算法
 // 👍 3296 👎 0
 
-import java.util.ArrayList;
-import java.util.Comparator;
-
 public class P4MedianOfTwoSortedArrays {
     //leetcode submit region begin(Prohibit modification and deletion)
-    static class Solution {
-        public static void main(String[] args) {
-            Solution solution = new Solution();
-            int[] int1 = {1, 2};
-            int[] int2 = {3, 4};
-            double medianSortedArrays = solution.findMedianSortedArrays(int1, int2);
-            System.out.println(medianSortedArrays);
-        }
-
+    class Solution {
         public double findMedianSortedArrays(int[] nums1, int[] nums2) {
-            ArrayList<Integer> integers = new ArrayList<>();
+            int m = nums1.length;
+            int n = nums2.length;
+            int len = m + n;
+            int left = -1, right = -1;
+            int aStart = 0, bStart = 0;
+            for (int i = 0; i <= len / 2; i++) {
+                left = right;
+                if (aStart < m && (bStart >= n || nums1[aStart] < nums2[bStart])) {
+                    right = nums1[aStart++];
+                } else {
+                    right = nums2[bStart++];
+                }
+            }
 
-            for (int i : nums1) {
-                integers.add(i);
-            }
-            for (int i : nums2) {
-                integers.add(i);
-            }
-            integers.sort(Comparator.comparingInt(o -> o));
-            double res;
-            int size = integers.size();
-            if (integers.size() % 2 == 0) {
-                // 1 3 4 6
-                res = (integers.get(size / 2 - 1) + integers.get((size / 2))) / 2;
+            if ((len & 1) == 0) {
+                return (left + right) / 2.0;
             } else {
-                // 0 1 2 3 4
-                res = integers.get((size - 1) / 2);
+                return right;
             }
-            return res;
         }
     }
 //leetcode submit region end(Prohibit modification and deletion)
